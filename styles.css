@@ -4,3 +4,13 @@ body {
   h1, h2, nav a, .logo {
     font-family: 'Bebas Neue', cursive;
   }
+
+  header{
+    a{
+      transition: 0.3s;
+    }
+    a:hover {
+      font-size: 110%;
+      transition: 0.3s;
+    }
+  }

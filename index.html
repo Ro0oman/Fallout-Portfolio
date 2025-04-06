@@ -1,117 +1,314 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roman Myziuk | Fullstack Developer</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body class="bg-[#faf8f5] text-gray-900 flex flex-col items-center min-h-screen">
-  <div class="w-full max-w-full">
-    <!-- NAVBAR -->
-    <header class="bg-[#002b56] text-[#ffcc00] p-5 flex flex-col md:flex-row justify-between items-center shadow-lg">
-      <div class="logo text-3xl">ROMAN MYZIUK</div>
-      <nav class="flex flex-wrap gap-4 mt-3 md:mt-0 justify-center md:justify-end">
-        <a href="#about" class="hover:underline">Sobre mí</a>
-        <a href="#projects" class="hover:underline">Proyectos</a>
-        <a href="#skills" class="hover:underline">Habilidades</a>
-        <a href="#timeline" class="hover:underline">Trayectoria</a>
-        <a href="#contact" class="hover:underline">Contacto</a>
-      </nav>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roman Myziuk | Fullstack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- FontAwesome para los iconos -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
 
-    <!-- HERO / PRESENTACIÓN -->
-    <section id="about" class="flex flex-col md:flex-row items-center justify-center gap-10 py-10">
-      <img src="vault-boy-style-portrait.png" alt="Roman estilo Vault Boy" class="w-40 sm:w-52 rounded-full">
-      <div class="max-w-xl text-center md:text-left">
-        <h1 class="text-3xl sm:text-4xl text-[#002b56] mb-2">Hola, soy Roman Myziuk</h1>
-        <h2 class="text-xl sm:text-2xl font-bold mb-4 text-[#ffcc00]">Fullstack Developer</h2>
-        <p class="mb-3">Exigente y perfeccionista con ganas de afrontar nuevos retos y una gran pasión por la tecnología que nos rodea. Actualmente Consultor Técnico en Infoverity, con experiencia en desarrollo fullstack y consultoría de datos.</p>
-        <p class="mb-3">Trabajo con equipos en EE. UU. y EMEA. Dominio de inglés, valenciano/catalán y conocimientos básicos de ucraniano.</p>
-        <a href="#projects" class="inline-block bg-[#ffcc00] text-[#002b56] px-5 py-2 rounded font-bold mt-4 hover:bg-yellow-400">Ver Proyectos</a>
-      </div>
-    </section>
+    <!-- Definición de Variables CSS -->
+    <style>
+      :root {
+        /* Colores principales */
+        --color-principal: #002b56; /* Azul oscuro */
+        --color-secundario: #ffcc00; /* Amarillo */
+        --color-fondo: #faf8f5; /* Fondo claro */
+        --color-fondo-secciones: #fffaf0; /* Fondo de secciones de proyectos */
+        --color-fondo-blanco: #ffffff; /* Fondo blanco */
+        --color-texto: #002b56; /* Texto principal */
 
-    <!-- TRAYECTORIA -->
-    <section id="timeline" class="bg-white py-10 px-4">
-      <h2 class="text-3xl text-center text-[#002b56] mb-10">Trayectoria</h2>
-      <div class="space-y-6 max-w-4xl mx-auto">
-        <div>
-          <h3 class="text-xl font-semibold">CFGM en Sistemas Microinformáticos y Redes (2019 - 2021)</h3>
-          <p>Seguridad informática, servicios de red (DHCP, Apache, DNS, FTP), HTML5, montaje y mantenimiento de ordenadores.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold">CFGS en Desarrollo de Aplicaciones Web (2021 - 2023)</h3>
-          <p>Programación con Java, Python, C, PHP, Laravel, JavaScript, Vue.js, SQL, PL/SQL y uso de MySQL.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold">Junior Fullstack Developer en TESI (Mar 2023 - Jul 2023)</h3>
-          <p>Desarrollo con Vue.js, Laravel y .NET para una aplicación a gran escala. Automatización con Twilio.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold">Technical Consultant en Infoverity (Ene 2024 - Actualidad)</h3>
-          <p>Soporte de datos y consultoría PIM/MDM para grandes compañías de EE. UU.</p>
-        </div>
-      </div>
-    </section>
+        /* Colores para los iconos de idiomas */
+        --color-icono: #002b56; /* Azul para iconos */
+      }
 
-    <!-- PROYECTOS -->
-    <section id="projects" class="bg-[#fffaf0] py-10 px-4">
-      <h2 class="text-3xl text-center text-[#002b56] mb-10">Proyectos</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-xl font-bold mb-2">PC-Creator</h3>
-          <p class="mb-2">Buscador conectado con la API de Steam que genera ordenadores preseleccionados para compartir configuraciones con la comunidad.</p>
-          <div class="flex flex-wrap gap-2 text-sm">
-            <span class="bg-[#ffcc00] text-[#002b56] px-2 py-1 rounded">Vue.js</span>
-            <span class="bg-[#ffcc00] text-[#002b56] px-2 py-1 rounded">Naive UI</span>
-            <span class="bg-[#ffcc00] text-[#002b56] px-2 py-1 rounded">Laravel</span>
-            <span class="bg-[#ffcc00] text-[#002b56] px-2 py-1 rounded">Steam API</span>
+      /* Estilos personalizados con variables */
+      body {
+        background-color: var(--color-fondo);
+        color: var(--color-texto);
+      }
+
+      .bg-principal {
+        background-color: var(--color-principal);
+      }
+
+      .bg-secundario {
+        background-color: var(--color-secundario);
+      }
+
+      .bg-fondo-secciones {
+        background-color: var(--color-fondo-secciones);
+      }
+
+      .bg-fondo-blanco {
+        background-color: var(--color-fondo-blanco);
+      }
+
+      .text-principal {
+        color: var(--color-principal);
+      }
+
+      .text-secundario {
+        color: var(--color-secundario);
+      }
+
+      .text-icono {
+        color: var(--color-icono);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-[#faf8f5] text-gray-900 flex flex-col items-center min-h-screen"
+  >
+    <div class="w-full max-w-full">
+      <!-- NAVBAR -->
+      <header
+        class="bg-principal text-secundario p-5 flex flex-col md:flex-row justify-between items-center shadow-lg"
+      >
+        <div class="logo text-3xl">ROMAN MYZIUK</div>
+        <nav
+          class="flex flex-wrap gap-4 mt-3 md:mt-0 justify-center md:justify-end"
+        >
+          <a href="#about" class="hover:underline">Sobre mí</a>
+          <a href="#projects" class="hover:underline">Proyectos</a>
+          <a href="#skills" class="hover:underline">Habilidades</a>
+          <a href="#timeline" class="hover:underline">Trayectoria</a>
+          <a href="#contact" class="hover:underline">Contacto</a>
+        </nav>
+      </header>
+
+      <!-- HERO / PRESENTACIÓN -->
+      <section
+        id="about"
+        class="flex flex-col md:flex-row items-center justify-center gap-10 py-10"
+      >
+        <img
+          src="./images/vault-boy-style-portrait.png"
+          alt="Roman estilo Vault Boy"
+          class="w-40 sm:w-52 rounded-full"
+        />
+        <div class="max-w-xl text-center md:text-left">
+          <h1 class="text-3xl sm:text-4xl text-principal mb-2">
+            Hola, soy <span class="text-secundario">Roman Myziuk</span>
+          </h1>
+          <h2 class="text-xl sm:text-2xl font-bold mb-4 text-secundario">
+            Fullstack Developer
+          </h2>
+          <p class="mb-3">
+            Exigente y perfeccionista con ganas de afrontar nuevos retos y una
+            gran pasión por la tecnología que nos rodea. Actualmente Consultor
+            Técnico en Infoverity, con experiencia en desarrollo fullstack y
+            consultoría de datos.
+          </p>
+          <p class="mb-3">
+            Trabajo con equipos en EE. UU. y EMEA. Dominio de inglés,
+            valenciano/catalán y conocimientos básicos de ucraniano.
+          </p>
+          <a
+            href="#projects"
+            class="inline-block bg-secundario text-principal px-5 py-2 rounded font-bold mt-4 hover:bg-yellow-400"
+            >Ver Proyectos</a
+          >
+        </div>
+      </section>
+
+      <!-- SECCIÓN PROYECTOS -->
+      <section id="projects" class="bg-fondo-secciones py-10 px-4">
+            <h2 class="text-3xl text-center text-principal mb-10">Proyectos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              <!-- Primer proyecto -->
+              <div class="bg-fondo-blanco p-6 rounded shadow">
+                <h3 class="text-xl font-bold mb-2">PC-Creator</h3>
+                <p class="mb-2">
+                  Buscador conectado con la API de Steam que genera ordenadores
+                  preseleccionados para compartir configuraciones con la comunidad.
+                </p>
+                <div class="flex flex-wrap gap-2 text-sm">
+                  <span class="bg-secundario text-principal px-2 py-1 rounded"
+                    >Vue.js</span
+                  >
+                  <span class="bg-secundario text-principal px-2 py-1 rounded"
+                    >Naive UI</span
+                  >
+                  <span class="bg-secundario text-principal px-2 py-1 rounded"
+                    >Laravel</span
+                  >
+                  <span class="bg-secundario text-principal px-2 py-1 rounded"
+                    >Steam API</span
+                  >
+                </div>
+    
+                <!-- Caja con imagen provisional -->
+                <div
+                  class="mt-4 h-64 w-full bg-gray-200 flex justify-center items-center rounded-lg overflow-hidden"
+                >
+                  <img
+                    src="./images/pccretorimg.png"
+                    alt="Imagen del Proyecto"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+    
+                <!-- Botones de Demo y GitHub -->
+                <div class="mt-4 flex justify-between">
+                  <a
+                    href="https://tfg-front-sigma.vercel.app"
+                    target="_blank"
+                    class="inline-block bg-secundario text-principal px-5 py-2 rounded font-bold hover:bg-yellow-400"
+                    >Demo</a
+                  >
+                  <a
+                    href="https://github.com/Ro0oman/Proyecto-TFG-Roman"
+                    target="_blank"
+                    class="inline-block bg-secundario text-principal px-5 py-2 rounded font-bold hover:bg-yellow-400"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+    
+              <!-- Segundo proyecto -->
+              <div class="bg-fondo-blanco p-6 rounded shadow">
+                <h3 class="text-xl font-bold mb-2">PONG V.2 (JS Vanilla)</h3>
+                <p class="mb-2">
+                  Recreación del clásico Pong programado con JavaScript Vanilla,
+                  incluye selector de dificultad y duración.
+                </p>
+                <div class="flex flex-wrap gap-2 text-sm">
+                  <span class="bg-secundario text-principal px-2 py-1 rounded"
+                    >JavaScript</span
+                  >
+                  <span class="bg-secundario text-principal px-2 py-1 rounded"
+                    >HTML & CSS</span
+                  >
+                </div>
+                <!-- Caja con imagen provisional -->
+                <div
+                  class="mt-4 h-64 w-full bg-gray-200 flex justify-center items-center rounded-lg overflow-hidden"
+                >
+                  <img
+                    src="./images/pong.png"
+                    alt="Imagen del Proyecto"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+    
+                <!-- Botones de Demo y GitHub -->
+                <div class="mt-4 flex justify-between">
+                  <a
+                    href="https://pong-v2-silk.vercel.app"
+                    target="_blank"
+                    class="inline-block bg-secundario text-principal px-5 py-2 rounded font-bold hover:bg-yellow-400"
+                    >Demo</a
+                  >
+                  <a
+                    href="https://github.com/Ro0oman/PONG-V2"
+                    target="_blank"
+                    class="inline-block bg-secundario text-principal px-5 py-2 rounded font-bold hover:bg-yellow-400"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+            <p class="mt-6 text-center italic">
+              Estos no son todos mis proyectos. Iré subiendo más poco a poco. Visita
+              mi
+              <a
+                href="https://github.com/Ro0oman"
+                target="_blank"
+                class="underline text-blue-700"
+                >GitHub</a
+              >
+              para verlos todos.
+            </p>
+          </section>
+
+      <!-- HABILIDADES -->
+      <section id="skills" class="py-10 px-4">
+        <h2 class="text-3xl text-center text-principal mb-10">Habilidades</h2>
+        <div class="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+          <span class="bg-secundario text-principal px-4 py-2 rounded"
+            >Laravel</span
+          >
+          <span class="bg-secundario text-principal px-4 py-2 rounded"
+            >Vue.js</span
+          >
+          <span class="bg-secundario text-principal px-4 py-2 rounded"
+            >JavaScript</span
+          >
+          <span class="bg-secundario text-principal px-4 py-2 rounded"
+            >Python</span
+          >
+          <span class="bg-secundario text-principal px-4 py-2 rounded">PHP</span>
+          <span class="bg-secundario text-principal px-4 py-2 rounded"
+            >SQL / PL-SQL</span
+          >
+          <span class="bg-secundario text-principal px-4 py-2 rounded"
+            >Tailwind CSS</span
+          >
+          <span class="bg-secundario text-principal px-4 py-2 rounded"
+            >Bootstrap</span
+          >
+          <span class="bg-secundario text-principal px-4 py-2 rounded"
+            >Java</span
+          >
+        </div>
+      </section>
+
+      <!-- SECCIÓN IDIOMAS -->
+      <section id="languages" class="py-10 px-4">
+        <h2 class="text-3xl text-center text-principal mb-10">Idiomas</h2>
+        <div class="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
+          <div class="flex items-center gap-2">
+            <i class="fab fa-flag-uk text-3xl text-icono"></i>
+            <span class="text-lg">Inglés (fluido)</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fab fa-flag-es text-3xl text-icono"></i>
+            <span class="text-lg">Catalán/Valenciano</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fab fa-flag-ua text-3xl text-icono"></i>
+            <span class="text-lg">Ucraniano (básico)</span>
           </div>
         </div>
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-xl font-bold mb-2">PONG V.2 (JS Vanilla)</h3>
-          <p class="mb-2">Recreación del clásico Pong programado con JavaScript Vanilla, incluye selector de dificultad y duración.</p>
-          <div class="flex flex-wrap gap-2 text-sm">
-            <span class="bg-[#ffcc00] text-[#002b56] px-2 py-1 rounded">JavaScript</span>
-            <span class="bg-[#ffcc00] text-[#002b56] px-2 py-1 rounded">HTML & CSS</span>
-          </div>
-        </div>
-      </div>
-      <p class="mt-6 text-center italic">Estos no son todos mis proyectos. Iré subiendo más poco a poco. Visita mi <a href="https://github.com/Ro0oman" target="_blank" class="underline text-blue-700">GitHub</a> para verlos todos.</p>
-    </section>
+      </section>
 
-    <!-- HABILIDADES -->
-    <section id="skills" class="py-10 px-4">
-      <h2 class="text-3xl text-center text-[#002b56] mb-10">Habilidades</h2>
-      <div class="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
-        <span class="bg-[#ffcc00] text-[#002b56] px-4 py-2 rounded">Laravel</span>
-        <span class="bg-[#ffcc00] text-[#002b56] px-4 py-2 rounded">Vue.js</span>
-        <span class="bg-[#ffcc00] text-[#002b56] px-4 py-2 rounded">JavaScript</span>
-        <span class="bg-[#ffcc00] text-[#002b56] px-4 py-2 rounded">Python</span>
-        <span class="bg-[#ffcc00] text-[#002b56] px-4 py-2 rounded">PHP</span>
-        <span class="bg-[#ffcc00] text-[#002b56] px-4 py-2 rounded">SQL / PL-SQL</span>
-        <span class="bg-[#ffcc00] text-[#002b56] px-4 py-2 rounded">Tailwind CSS</span>
-        <span class="bg-[#ffcc00] text-[#002b56] px-4 py-2 rounded">Bootstrap</span>
-        <span class="bg-[#ffcc00] text-[#002b56] px-4 py-2 rounded">Java</span>
-        <span class="bg-[#ffcc00] text-[#002b56] px-4 py-2 rounded">Inglés (fluido)</span>
-        <span class="bg-[#ffcc00] text-[#002b56] px-4 py-2 rounded">Catalán/Valenciano</span>
-        <span class="bg-[#ffcc00] text-[#002b56] px-4 py-2 rounded">Ucraniano (básico)</span>
-      </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contact" class="bg-[#002b56] text-[#ffcc00] py-10 px-4">
-      <h2 class="text-3xl text-center mb-6">Contacto</h2>
-      <form class="max-w-2xl mx-auto flex flex-col gap-4">
-        <input type="text" placeholder="Nombre" class="p-3 rounded border-none">
-        <input type="email" placeholder="Correo electrónico" class="p-3 rounded border-none">
-        <textarea rows="4" placeholder="Mensaje..." class="p-3 rounded border-none"></textarea>
-        <button type="submit" class="bg-[#ffcc00] text-[#002b56] px-6 py-2 rounded font-bold hover:bg-yellow-400">Enviar</button>
-      </form>
-    </section>
-  </div>
-</body>
-</html>           
+      <!-- CONTACTO -->
+      <section id="contact" class="bg-principal text-secundario py-10 px-4">
+        <h2 class="text-3xl text-center mb-6">Contacto</h2>
+        <form class="max-w-2xl mx-auto flex flex-col gap-4">
+          <input
+            type="text"
+            placeholder="Nombre"
+            class="p-3 rounded border-none"
+          />
+          <input
+            type="email"
+            placeholder="Correo electrónico"
+            class="p-3 rounded border-none"
+          />
+          <textarea
+            rows="4"
+            placeholder="Mensaje..."
+            class="p-3 rounded border-none"
+          ></textarea>
+          <button
+            type="submit"
+            class="bg-secundario text-principal px-6 py-2 rounded font-bold hover:bg-yellow-400"
+          >
+            Enviar
+          </button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
