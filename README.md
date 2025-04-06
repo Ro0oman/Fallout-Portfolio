@@ -16,7 +16,7 @@ Trabajo con equipos de todo el mundo (EE. UU. y EMEA), y tengo dominio de varios
 - **Herramientas y tecnologías**: Tailwind CSS, Bootstrap
 - **Otros**: API de Steam, Naive UI
 
-Puedes ver más detalles sobre mi trayectoria en el [sitio web personal](https://tusitio.com).
+Puedes ver más detalles sobre mi trayectoria en el [sitio web personal]([https://tusitio.com](https://fallout-portfolio-two.vercel.app/)).
 
 ---
 
