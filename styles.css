@@ -14,3 +14,50 @@ body {
       transition: 0.3s;
     }
   }
+
+  :root {
+    /* Colores principales */
+    --color-principal: #002b56; /* Azul oscuro */
+    --color-secundario: #ffcc00; /* Amarillo */
+    --color-fondo: #faf8f5; /* Fondo claro */
+    --color-fondo-secciones: #fffaf0; /* Fondo de secciones de proyectos */
+    --color-fondo-blanco: #ffffff; /* Fondo blanco */
+    --color-texto: #002b56; /* Texto principal */
+
+    /* Colores para los iconos de idiomas */
+    --color-icono: #002b56; /* Azul para iconos */
+  }
+
+  /* Estilos personalizados con variables */
+  body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+  }
+
+  .bg-principal {
+    background-color: var(--color-principal);
+  }
+
+  .bg-secundario {
+    background-color: var(--color-secundario);
+  }
+
+  .bg-fondo-secciones {
+    background-color: var(--color-fondo-secciones);
+  }
+
+  .bg-fondo-blanco {
+    background-color: var(--color-fondo-blanco);
+  }
+
+  .text-principal {
+    color: var(--color-principal);
+  }
+
+  .text-secundario {
+    color: var(--color-secundario);
+  }
+
+  .text-icono {
+    color: var(--color-icono);
+  }
