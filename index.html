@@ -24,9 +24,9 @@
       <header
         class="bg-principal text-secundario p-5 flex flex-col md:flex-row justify-between items-center shadow-lg"
       >
-        <div class="logo text-3xl">ROMAN MYZIUK</div>
+        <div class="logo text-4xl hover:underline">ROMAN MYZIUK</div>
         <nav
-          class="flex flex-wrap gap-4 mt-3 md:mt-0 justify-center md:justify-end"
+          class="flex text-3xl flex-wrap gap-4 mt-3 md:mt-0 justify-center md:justify-end"
         >
           <a href="#about" class="hover:underline">Sobre mí</a>
           <a href="#projects" class="hover:underline">Proyectos</a>
@@ -37,9 +37,10 @@
       </header>
 
       <!-- HERO / PRESENTACIÓN -->
-      <section
+      <div class="flex flex-col items-center bg-fondo-secciones">
+        <section
         id="about"
-        class="flex flex-col md:flex-row items-center justify-center gap-10 py-10"
+        class="flex flex-col md:flex-row items-center justify-center gap-10 m-10 p-10 rounded-full w-1/2 "
       >
         <img
           src="./images/vault-boy-style-portrait.png"
@@ -64,16 +65,37 @@
             valenciano/catalán y conocimientos básicos de ucraniano.
           </p>
           <a
-            href="#projects"
+            href="https://www.linkedin.com/in/roman-myziuk/"
+            target="_blank"
             class="inline-block bg-secundario text-principal px-5 py-2 rounded font-bold mt-4 hover:bg-yellow-400"
-            >Ver Proyectos</a
+            ><i class="fa-brands fa-linkedin"></i> Ver Linkedin</a
           >
+        </div>
+      </section>
+      </div>
+
+      <!-- NUEVA SECCIÓN DE TRAYECTORIA -->
+      <section id="timeline" class="bg-fondo-secciones py-10 px-4 ">
+        <h2 class="text-3xl text-center text-[#002b56] mb-10">-- Trayectoria --</h2>
+        <div class="max-w-4xl mx-auto flex flex-col gap-6">
+          <div class="border-l-4 border-[#ffcc00] pl-6 relative">
+            <span class="absolute -left-2.5 top-1 w-5 h-5 bg-[#ffcc00] rounded-full border-4 border-white"></span>
+            <h3 class="text-xl font-semibold text-[#002b56]">Junior Fullstack Developer en <a href="https://tesigandia.com/" target="_blank" class="text-blue-700">TESI</a></h3>
+            <p class="text-sm text-gray-600 mb-1">Mar 2023 - Jul 2023</p>
+            <p>Desarrollo en Vue.js 3, Laravel y .NET (API REST CRUD) para una plataforma con millones de usuarios.</p>
+          </div>
+          <div class="border-l-4 border-[#ffcc00] pl-6 relative">
+            <span class="absolute -left-2.5 top-1 w-5 h-5 bg-[#ffcc00] rounded-full border-4 border-white"></span>
+            <h3 class="text-xl font-semibold text-[#002b56]">Technical Consultant en <a href="https://www.infoverity.com/es/" target="_blank" class="text-blue-700">Infoverity</a></h3>
+            <p class="text-sm text-gray-600 mb-1">Ene 2024 - Actualidad</p>
+            <p>Soporte técnico y consultoría en soluciones PIM/MDM (Informatica P360, IDQ, ActiveVOS) para clientes globales.</p>
+          </div>
         </div>
       </section>
 
       <!-- SECCIÓN PROYECTOS -->
-      <section id="projects" class="bg-fondo-secciones py-10 px-4">
-            <h2 class="text-3xl text-center text-principal mb-10">Proyectos</h2>
+      <section id="projects" class="bg-fondo-secciones py-10 px-4 ">
+            <h2 class="text-3xl text-center text-principal mb-10  text-4xl">-- Proyectos  --</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               <!-- Primer proyecto -->
               <div class="bg-fondo-blanco p-6 rounded shadow">
@@ -181,53 +203,62 @@
             </p>
           </section>
 
-      <!-- HABILIDADES -->
-      <section id="skills" class="py-10 px-4">
-        <h2 class="text-3xl text-center text-principal mb-10">Habilidades</h2>
-        <div class="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
-          <span class="bg-secundario text-principal px-4 py-2 rounded"
-            >Laravel</span
-          >
-          <span class="bg-secundario text-principal px-4 py-2 rounded"
-            >Vue.js</span
-          >
-          <span class="bg-secundario text-principal px-4 py-2 rounded"
-            >JavaScript</span
-          >
-          <span class="bg-secundario text-principal px-4 py-2 rounded"
-            >Python</span
-          >
-          <span class="bg-secundario text-principal px-4 py-2 rounded">PHP</span>
-          <span class="bg-secundario text-principal px-4 py-2 rounded"
-            >SQL / PL-SQL</span
-          >
-          <span class="bg-secundario text-principal px-4 py-2 rounded"
-            >Tailwind CSS</span
-          >
-          <span class="bg-secundario text-principal px-4 py-2 rounded"
-            >Bootstrap</span
-          >
-          <span class="bg-secundario text-principal px-4 py-2 rounded"
-            >Java</span
-          >
+      <!-- SECCIÓN DE HABILIDADES -->
+    <section id="skills" class="bg-fondo-secciones py-10 px-4">
+      <h2 class="text-3xl text-center text-[#002b56] mb-8">Habilidades</h2>
+      <div class="max-w-4xl mx-auto grid gap-8 md:grid-cols-3">
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-[#002b56] mb-4 flex items-center gap-2">
+            <i class="fas fa-tools text-[#ffcc00]"></i> Consultoría Técnica
+          </h3>
+          <ul class="space-y-2 text-gray-700">
+            <li><i class="fas fa-check text-[#002b56] mr-2"></i>Informatica P360, IDQ y ActiveVOS</li>
+            <li><i class="fas fa-check text-[#002b56] mr-2"></i>Soporte técnico a clientes globales</li>
+            <li><i class="fas fa-check text-[#002b56] mr-2"></i>Comunicación con equipos multidisciplinares</li>
+            <li><i class="fas fa-check text-[#002b56] mr-2"></i>Documentación técnica</li>
+          </ul>
         </div>
-      </section>
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-[#002b56] mb-4 flex items-center gap-2">
+            <i class="fas fa-code text-[#ffcc00]"></i> Programación
+          </h3>
+          <ul class="space-y-2 text-gray-700">
+            <li><i class="fas fa-code-branch text-[#002b56] mr-2"></i>Java, Python, PHP, JavaScript, C</li>
+            <li><i class="fas fa-layer-group text-[#002b56] mr-2"></i>Laravel, Vue.js, .NET</li>
+            <li><i class="fas fa-database text-[#002b56] mr-2"></i>SQL, PL/SQL</li>
+            <li><i class="fas fa-plug text-[#002b56] mr-2"></i>APIs RESTful & buenas prácticas</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-[#002b56] mb-4 flex items-center gap-2">
+            <i class="fas fa-user-friends text-[#ffcc00]"></i> Soft Skills
+          </h3>
+          <ul class="space-y-2 text-gray-700">
+            <li><i class="fas fa-users text-[#002b56] mr-2"></i>Trabajo en equipo</li>
+            <li><i class="fas fa-brain text-[#002b56] mr-2"></i>Resolución de problemas</li>
+            <li><i class="fas fa-sync text-[#002b56] mr-2"></i>Adaptabilidad</li>
+            <li><i class="fas fa-bolt text-[#002b56] mr-2"></i>Autonomía y proactividad</li>
+            <li><i class="fas fa-comments text-[#002b56] mr-2"></i>Comunicación</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
       <!-- SECCIÓN IDIOMAS -->
-      <section id="languages" class="py-10 px-4">
+      <section id="languages" class="py-10 px-4 bg-fondo-secciones">
         <h2 class="text-3xl text-center text-principal mb-10">Idiomas</h2>
         <div class="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
           <div class="flex items-center gap-2">
             <i class="fab fa-flag-uk text-3xl text-icono"></i>
-            <span class="text-lg">Inglés (fluido)</span>
+            <span class="text-lg"><span class="flag-icon flag-icon-us flag-icon-squared"></span> - Inglés (fluido)</span>
           </div>
           <div class="flex items-center gap-2">
             <i class="fab fa-flag-es text-3xl text-icono"></i>
-            <span class="text-lg">Catalán/Valenciano</span>
+            <span class="text-lg"><span class="flag-icon flag-icon-es flag-icon-squared"></span> - Catalán/Valenciano</span>
           </div>
           <div class="flex items-center gap-2">
             <i class="fab fa-flag-ua text-3xl text-icono"></i>
-            <span class="text-lg">Ucraniano (básico)</span>
+            <span class="text-lg"><span class="flag-icon flag-icon-ua flag-icon-squared"></span> - Ucraniano (básico)</span>
           </div>
         </div>
       </section>
