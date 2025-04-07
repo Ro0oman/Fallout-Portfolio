@@ -64,3 +64,9 @@ body {
   .text-icono {
     color: var(--color-icono);
   }
+
+  iframe {
+    display: block; /* Hace que el iframe se trate como un bloque */
+    margin: 0 auto;  /* Centra el iframe horizontalmente */
+    width: 50%;      /* Asigna un ancho del 50% */
+}
