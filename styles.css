@@ -1,72 +1,84 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css");
 
 
+
+h1,
+h2,
+nav a,
+.logo {
+  font-family: 'Bebas Neue', cursive;
+}
+
+header {
+  a {
+    transition: 0.3s;
+  }
+
+  a:hover {
+    font-size: 110%;
+    transition: 0.3s;
+  }
+}
+
+:root {
+  /* Colores principales */
+  --color-principal: #002b56;
+  /* Azul oscuro */
+  --color-secundario: #ffcc00;
+  /* Amarillo */
+  --color-fondo: #faf8f5;
+  /* Fondo claro */
+  --color-fondo-secciones: #fffaf0;
+  /* Fondo de secciones de proyectos */
+  --color-fondo-blanco: #ffffff;
+  /* Fondo blanco */
+  --color-texto: #002b56;
+  /* Texto principal */
+
+  /* Colores para los iconos de idiomas */
+  --color-icono: #002b56;
+  /* Azul para iconos */
+}
+
+/* Estilos personalizados con variables */
 body {
-      font-family: 'Roboto', sans-serif;
-  } 
-  h1, h2, nav a, .logo {
-    font-family: 'Bebas Neue', cursive;
-  }
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
 
-  header{
-    a{
-      transition: 0.3s;
-    }
-    a:hover {
-      font-size: 110%;
-      transition: 0.3s;
-    }
-  }
+.bg-principal {
+  background-color: var(--color-principal);
+}
 
-  :root {
-    /* Colores principales */
-    --color-principal: #002b56; /* Azul oscuro */
-    --color-secundario: #ffcc00; /* Amarillo */
-    --color-fondo: #faf8f5; /* Fondo claro */
-    --color-fondo-secciones: #fffaf0; /* Fondo de secciones de proyectos */
-    --color-fondo-blanco: #ffffff; /* Fondo blanco */
-    --color-texto: #002b56; /* Texto principal */
+.bg-secundario {
+  background-color: var(--color-secundario);
+}
 
-    /* Colores para los iconos de idiomas */
-    --color-icono: #002b56; /* Azul para iconos */
-  }
+.bg-fondo-secciones {
+  background-color: var(--color-fondo-secciones);
+}
 
-  /* Estilos personalizados con variables */
-  body {
-    background-color: var(--color-fondo);
-    color: var(--color-texto);
-  }
+.bg-fondo-blanco {
+  background-color: var(--color-fondo-blanco);
+}
 
-  .bg-principal {
-    background-color: var(--color-principal);
-  }
+.text-principal {
+  color: var(--color-principal);
+}
 
-  .bg-secundario {
-    background-color: var(--color-secundario);
-  }
+.text-secundario {
+  color: var(--color-secundario);
+}
 
-  .bg-fondo-secciones {
-    background-color: var(--color-fondo-secciones);
-  }
+.text-icono {
+  color: var(--color-icono);
+}
 
-  .bg-fondo-blanco {
-    background-color: var(--color-fondo-blanco);
-  }
-
-  .text-principal {
-    color: var(--color-principal);
-  }
-
-  .text-secundario {
-    color: var(--color-secundario);
-  }
-
-  .text-icono {
-    color: var(--color-icono);
-  }
-
-  iframe {
-    display: block; /* Hace que el iframe se trate como un bloque */
-    margin: 0 auto;  /* Centra el iframe horizontalmente */
-    width: 50%;      /* Asigna un ancho del 50% */
+iframe {
+  display: block;
+  /* Hace que el iframe se trate como un bloque */
+  margin: 0 auto;
+  /* Centra el iframe horizontalmente */
+  width: 50%;
+  /* Asigna un ancho del 50% */
 }
