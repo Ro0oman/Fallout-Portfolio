@@ -4,6 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.langFlag{
+  font-size: 50px;
+}
+
 h1,
 h2,
 nav a,
