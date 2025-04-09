@@ -49,12 +49,17 @@
 <body class="bg-[#faf8f5] text-gray-900 flex flex-col items-center min-h-screen">
 
   <div class="w-full max-w-full">
+
     <!-- NAVBAR -->
     <header class="bg-principal text-secundario p-5 flex flex-col md:flex-row justify-between items-center shadow-lg">
       <div class="logo text-4xl hover:underline">ROMAN MYZIUK</div>
-      <nav class="flex text-3xl flex-wrap gap-4 mt-3 md:mt-0 justify-center md:justify-end">
+      <button id="menu-toggle" class="md:hidden text-secundario text-3xl">
+        <i id="menu-icon" class="fas fa-bars"></i>
+      </button>
+      <nav id="navbar"
+        class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out md:max-h-none md:overflow-visible md:flex text-3xl flex-wrap gap-4 mt-3 md:mt-0 justify-center md:justify-end">
         <a href="#about" class="hover:underline">Sobre mí</a>
-        <a href="#timeline" class="hover:underline">Trayectoria</a>
+        <a href="#timeline" class="hover:underline">Experiencia</a>
         <a href="#projects" class="hover:underline">Proyectos</a>
         <a href="#skills" class="hover:underline">Habilidades</a>
         <a href="#languages" class="hover:underline">Idiomas</a>
@@ -73,11 +78,10 @@
     </header>
 
     <!-- HERO / PRESENTACIÓN -->
-    <div class="flex flex-col items-center bg-fondo-secciones ">
-      <section id="about"
-        class="flex sm:w-full flex-col md:flex-row items-center justify-center gap-10 m-10 p-10 rounded-full w-1/2 ">
+    <div class="flex flex-col items-center bg-fondo-secciones w-full px-4 py-10">
+      <section id="about" class="flex flex-col md:flex-row items-center justify-center gap-10 max-w-6xl w-full">
         <img src="./images/vault-boy-style-portrait.png" alt="Roman estilo Vault Boy"
-          class="w-40 sm:w-52 rounded-full" />
+          class="w-32 sm:w-40 md:w-52 rounded-full" />
         <div class="max-w-xl text-center md:text-left">
           <h1 class="text-3xl sm:text-4xl text-principal mb-2">
             Hola, soy <span class="text-secundario">Roman Myziuk</span>
@@ -96,8 +100,8 @@
             valenciano/catalán y conocimientos básicos de ucraniano.
           </p>
           <a href="https://www.linkedin.com/in/roman-myziuk/" target="_blank"
-            class="inline-block bg-secundario text-principal px-5 py-2 rounded font-bold mt-4 hover:bg-yellow-400"><i
-              class="fa-brands fa-linkedin"></i> Ver Linkedin</a>
+            class="inline-block bg-secundario text-principal px-5 py-2 rounded font-bold mt-4 hover:bg-yellow-400">
+            <i class="fa-brands fa-linkedin"></i> Ver Linkedin</a>
         </div>
       </section>
     </div>
@@ -274,6 +278,31 @@
       <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScpInKlrXnvTz4OTBdnmnJIhP1wHz8sUY8b0RZVoiLdvhujDw/viewform?usp=header"  height="600" frameborder="0"></iframe> -->
     </section>
   </div>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const menuIcon = document.getElementById("menu-icon");
+    const navbar = document.getElementById("navbar");
+  
+    let isOpen = false;
+  
+    menuToggle.addEventListener("click", () => {
+      isOpen = !isOpen;
+  
+      if (isOpen) {
+        navbar.classList.remove("max-h-0");
+        navbar.classList.add("max-h-96"); // altura suficiente para los links
+        menuIcon.classList.remove("fa-bars");
+        menuIcon.classList.add("fa-times");
+      } else {
+        navbar.classList.remove("max-h-96");
+        navbar.classList.add("max-h-0");
+        menuIcon.classList.remove("fa-times");
+        menuIcon.classList.add("fa-bars");
+      }
+    });
+  </script>
+  
 </body>
 
 </html>

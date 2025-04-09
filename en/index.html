@@ -8,6 +8,8 @@
   <meta name="theme-color" content="#002b56" />
   <link rel="icon" type="image/png" href="../images/favicon.png" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LKJXEMK2C"></script>
 
@@ -48,7 +50,11 @@
   <div class="w-full max-w-full">
     <header class="bg-principal text-secundario p-5 flex flex-col md:flex-row justify-between items-center shadow-lg">
       <div class="logo text-4xl hover:underline">ROMAN MYZIUK</div>
-      <nav class="flex text-3xl flex-wrap gap-4 mt-3 md:mt-0 justify-center md:justify-end">
+      <button id="menu-toggle" class="md:hidden text-secundario text-3xl">
+        <i id="menu-icon" class="fas fa-bars"></i>
+      </button>
+      <nav id="navbar"
+        class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out md:max-h-none md:overflow-visible md:flex text-3xl flex-wrap gap-4 mt-3 md:mt-0 justify-center md:justify-end">
         <a href="#about" class="hover:underline">About Me</a>
         <a href="#timeline" class="hover:underline">Experience</a>
         <a href="#projects" class="hover:underline">Projects</a>
@@ -68,11 +74,11 @@
       </div>
     </header>
 
-    <div class="flex flex-col items-center bg-fondo-secciones">
-      <section id="about"
-        class="flex sm:w-full flex-col md:flex-row items-center justify-center gap-10 m-10 p-10 rounded-full w-1/2">
-        <img src="../images/vault-boy-style-portrait.png" alt="Vault Boy-style portrait of Roman"
-          class="w-40 sm:w-52 rounded-full" />
+    <!-- HERO / PRESENTACIÓN -->
+    <div class="flex flex-col items-center bg-fondo-secciones w-full px-4 py-10">
+      <section id="about" class="flex flex-col md:flex-row items-center justify-center gap-10 max-w-6xl w-full">
+        <img src="../images/vault-boy-style-portrait.png" alt="Roman estilo Vault Boy"
+          class="w-32 sm:w-40 md:w-52 rounded-full" />
         <div class="max-w-xl text-center md:text-left">
           <h1 class="text-3xl sm:text-4xl text-principal mb-2">
             Hi, I'm <span class="text-secundario">Roman Myziuk</span>
@@ -90,7 +96,7 @@
           </p>
           <a href="https://www.linkedin.com/in/roman-myziuk/" target="_blank"
             class="inline-block bg-secundario text-principal px-5 py-2 rounded font-bold mt-4 hover:bg-yellow-400">
-            <i class="fa-brands fa-linkedin"></i> View LinkedIn</a>
+            <i class="fa-brands fa-linkedin"></i> View Linkedin</a>
         </div>
       </section>
     </div>
@@ -262,6 +268,30 @@
     </section>
 
   </div>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const menuIcon = document.getElementById("menu-icon");
+    const navbar = document.getElementById("navbar");
+  
+    let isOpen = false;
+  
+    menuToggle.addEventListener("click", () => {
+      isOpen = !isOpen;
+  
+      if (isOpen) {
+        navbar.classList.remove("max-h-0");
+        navbar.classList.add("max-h-96"); // altura suficiente para los links
+        menuIcon.classList.remove("fa-bars");
+        menuIcon.classList.add("fa-times");
+      } else {
+        navbar.classList.remove("max-h-96");
+        navbar.classList.add("max-h-0");
+        menuIcon.classList.remove("fa-times");
+        menuIcon.classList.add("fa-bars");
+      }
+    });
+  </script>
 </body>
 
 </html>
