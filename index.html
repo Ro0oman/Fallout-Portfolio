@@ -63,6 +63,16 @@
     .muted{color:var(--muted)}
     footer{padding:2rem 0;color:var(--muted)}
     @media (max-width:900px){.hero{grid-template-columns:1fr}.grid.cols-2,.grid.cols-3{grid-template-columns:1fr}}
+    .card-img {
+  width: 100%;
+  height: 180px; /* puedes ajustar la altura que quieras (ej: 150px, 200px) */
+  object-fit: cover; /* recorta sin deformar */
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--border);
+  display: block;
+}
+
   </style>
 
   <!-- Datos estructurados: WebSite -->
@@ -218,6 +228,7 @@
     <h2>Proyectos destacados</h2>
     <div class="grid cols-2">
       <article class="card">
+        <img src="images\pccretorimg.png" alt="Vista previa del proyecto" class="card-img">
         <h3>PC‑Creator — Frontend Vue.js & Backend Laravel</h3>
         <p>
           Aplicación full‑stack con frontend en Vue.js y backend en Laravel. Buscador conectado a la API de Steam para generar recomendaciones de PCs gaming. Incluye base de datos SQL y API REST personalizada.
@@ -225,6 +236,7 @@
         <div class="tags">
           <span class="tag">Vue.js</span><span class="tag">Laravel</span><span class="tag">API REST</span><span class="tag">SQL</span>
         </div>
+        
         <p>
           <a href="https://tfg-front-sigma.vercel.app/" target="_blank" rel="noopener">Demo</a> ·
           <a href="https://github.com/Ro0oman/Proyecto-TFG-Roman" target="_blank" rel="noopener">GitHub</a>
@@ -232,6 +244,7 @@
       </article>
 
       <article class="card">
+        <img src="images\flask.png" alt="Vista previa del proyecto" class="card-img">
         <h3>Task Manager — Frontend Vue.js & Backend Python Flask</h3>
         <p>
           App full‑stack en Python: gestor de tareas con persistencia y actualizaciones en vivo sin recargar. Demuestra patrones modernos de frontend y APIs web con Flask.
@@ -246,6 +259,8 @@
       </article>
 
       <article class="card">
+        <img src="images\pong.png" alt="Vista previa del proyecto" class="card-img">
+        
         <h3>PONG V.2 — JavaScript Vanilla</h3>
         <p>
           Recreación del clásico Pong programado en JavaScript Vanilla puro, sin frameworks. Incluye selector de dificultad y duración. Muestra dominio de JS nativo y programación de juegos con canvas.
@@ -260,6 +275,7 @@
       </article>
 
       <article class="card">
+        <img src="images\realmealdeal.png" alt="Vista previa del proyecto" class="card-img">
         <h3>RealMealDeal — Vue 3 + Pinia + Integración API</h3>
         <p>
           Recomendador de recetas con Vue 3 y Pinia para estado, integrando una API externa. Modo claro/oscuro, búsqueda por categorías y reproducción de vídeos.
@@ -274,6 +290,7 @@
       </article>
 
       <article class="card">
+        <img src="images\ecotrack.png" alt="Vista previa del proyecto" class="card-img">
         <h3>EcoTrack — Next.js + TypeScript + Firebase</h3>
         <p>
           App moderna de finanzas personales con Next.js y TypeScript. Backend en Firebase, componentes ShadCN UI e integración de IA. Ejemplo de frontend avanzado con tooling moderno.
