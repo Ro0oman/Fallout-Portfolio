@@ -72,6 +72,46 @@
   border: 1px solid var(--border);
   display: block;
 }
+/* Listas con iconos */
+.icon-list, .lang-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.icon-list li, .lang-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+}
+
+/* Iconos de skills */
+.icon-list img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 2px rgb(255, 255, 255));
+}
+
+/* Banderas idiomas */
+.lang-list img {
+  width: 20px;
+  height: 14px;
+  border-radius: 2px;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+/* Hover dinámico */
+.card:hover {
+  transform: translateY(-4px);
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,.35);
+}
+
   </style>
 
   <!-- Structured Data: WebSite -->
@@ -307,50 +347,52 @@
   </section>
 
   <section id="skills" aria-label="Skills">
-    <h2>Skills</h2>
-    <div class="grid cols-3">
-      <article class="card">
-        <h3>Frontend Development</h3>
-        <ul>
-          <li>JavaScript (ES6+, Vanilla JS)</li>
-          <li>Vue.js (2.x, 3.x, Composition API)</li>
-          <li>Advanced HTML5 & CSS3</li>
-          <li>Responsive & Mobile‑First</li>
-          <li>Tailwind CSS & Bootstrap</li>
-        </ul>
-      </article>
-      <article class="card">
-        <h3>Backend Development</h3>
-        <ul>
-          <li>Python (Flask, Django)</li>
-          <li>PHP & Laravel Framework</li>
-          <li>.NET Core & .NET Framework</li>
-          <li>REST APIs & Web Services</li>
-          <li>Java & Enterprise Apps</li>
-        </ul>
-      </article>
-      <article class="card">
-        <h3>Databases & DevOps</h3>
-        <ul>
-          <li>SQL & Database Design</li>
-          <li>PL/SQL & Stored Procedures</li>
-          <li>MySQL, PostgreSQL, SQLite</li>
-          <li>Git & Version Control</li>
-          <li>API Integration & Testing</li>
-        </ul>
-      </article>
-    </div>
-  </section>
+  <h2>Skills</h2>
+  <div class="grid cols-3">
+    <article class="card">
+      <h3>⚡ Frontend Development</h3>
+      <ul class="icon-list">
+        <li><img src="../icons/javascript.svg" alt="JavaScript"> JavaScript (ES6+, Vanilla JS)</li>
+        <li><img src="../icons/vue.svg" alt="Vue.js"> Vue.js (2.x, 3.x, Composition API)</li>
+        <li><img src="../icons/html.svg" alt="HTML5"> Advanced HTML5 & CSS3</li>
+        <li><img src="../icons/css.svg" alt="Responsive"> Responsive & Mobile-First</li>
+        <li><img src="../icons/tailwindcss.svg" alt="Tailwind CSS"> Tailwind CSS & Bootstrap</li>
+      </ul>
+    </article>
 
-  <section id="languages" aria-label="Languages">
-    <h2>Languages</h2>
-    <ul>
-      <li>Spanish (Native)</li>
-      <li>English (Fluent — International experience)</li>
-      <li>Catalan/Valencian (Native)</li>
-      <li>Ukrainian (Basic)</li>
-    </ul>
-  </section>
+    <article class="card">
+      <h3>🖥️ Backend Development</h3>
+      <ul class="icon-list">
+        <li><img src="../icons/python.svg" alt="Python"> Python (Flask, Django)</li>
+        <li><img src="../icons/php.svg" alt="PHP"> PHP & Laravel Framework</li>
+        <li><img src="../icons/dotnet.svg" alt=".NET"> .NET Core & .NET Framework</li>
+        <li><img src="../icons/swagger.svg" alt="API"> REST APIs & Web Services</li>
+        <li><img src="../icons/java.svg" alt="Java"> Java & Enterprise Apps</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3>⚙️ Databases & DevOps</h3>
+      <ul class="icon-list">
+        <li><img src="../icons/sql.svg" alt="SQL"> SQL & Database Design</li>
+        <li><img src="../icons/SQLLITE.svg" alt="PL/SQL"> PL/SQL & Stored Procedures</li>
+        <li><img src="../icons/sql.svg" alt="Databases"> MySQL, SQLite</li>
+        <li><img src="../icons/git.svg" alt="Git"> Git & Version Control</li>
+        <li> API Integration & Testing</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="languages" aria-label="Languages">
+  <h2>Languages</h2>
+  <ul class="lang-list">
+    <li><img src="../flags/es.svg" alt="Spanish"> Spanish <span class="muted">(Native)</span></li>
+    <li><img src="../flags/eng.svg" alt="English"> English <span class="muted">(Fluent — International experience)</span></li>
+    <li><img src="../flags/es-ct.svg" alt="Catalan"> Catalan/Valencian <span class="muted">(Native)</span></li>
+    <li><img src="../flags/ua.svg" alt="Ukrainian"> Ukrainian <span class="muted">(Basic)</span></li>
+  </ul>
+</section>
 
   <section id="faq" aria-label="FAQ">
     <h2>FAQ</h2>
