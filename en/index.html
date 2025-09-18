@@ -63,6 +63,15 @@
     .muted{color:var(--muted)}
     footer{padding:2rem 0;color:var(--muted)}
     @media (max-width:900px){.hero{grid-template-columns:1fr}.grid.cols-2,.grid.cols-3{grid-template-columns:1fr}}
+    .card-img {
+  width: 100%;
+  height: 180px; /* puedes ajustar la altura que quieras (ej: 150px, 200px) */
+  object-fit: cover; /* recorta sin deformar */
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--border);
+  display: block;
+}
   </style>
 
   <!-- Structured Data: WebSite -->
@@ -218,6 +227,7 @@
     <h2>Featured Projects</h2>
     <div class="grid cols-2">
       <article class="card">
+        <img src="../images\pccretorimg.png" alt="Vista previa del proyecto" class="card-img">
         <h3>PC‑Creator — Vue.js Frontend & Laravel Backend</h3>
         <p>
           Full‑stack app with a Vue.js frontend and Laravel backend. Search integrates the Steam API to generate gaming PC build recommendations. Includes a SQL database and custom REST API.
@@ -232,6 +242,7 @@
       </article>
 
       <article class="card">
+        <img src="../images\flask.png" alt="Vista previa del proyecto" class="card-img">
         <h3>Task Manager — Vue.js Frontend & Python Flask Backend</h3>
         <p>
           Full‑stack Python app: task manager with persistent storage and live updates without full page reloads. Demonstrates modern frontend patterns and web APIs with Flask.
@@ -246,6 +257,7 @@
       </article>
 
       <article class="card">
+        <img src="../images\pong.png" alt="Vista previa del proyecto" class="card-img">
         <h3>PONG V.2 — Vanilla JavaScript</h3>
         <p>
           Classic Pong recreation written in pure Vanilla JavaScript, no frameworks. Includes difficulty and duration selectors. Showcases native JS and canvas game programming.
@@ -260,6 +272,8 @@
       </article>
 
       <article class="card">
+        <img src="../images\realmealdeal.png" alt="Vista previa del proyecto" class="card-img">
+
         <h3>RealMealDeal — Vue 3 + Pinia + API Integration</h3>
         <p>
           Recipe recommender built with Vue 3 and Pinia for state management, integrating an external API. Dark/light modes, category search and video playback.
@@ -274,6 +288,8 @@
       </article>
 
       <article class="card">
+        <img src="../images\ecotrack.png" alt="Vista previa del proyecto" class="card-img">
+
         <h3>EcoTrack — Next.js + TypeScript + Firebase</h3>
         <p>
           Modern personal finance app using Next.js and TypeScript. Firebase backend, ShadCN UI components and AI integration. Example of advanced frontend with modern tooling.
