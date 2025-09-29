@@ -3,17 +3,23 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
+  <link rel="icon" type="image" href="images/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Roman Myziuk — Desarrollador Full‑Stack (Frontend, Backend, Python, SQL) | Programador Remoto</title>
   <meta name="description" content="Desarrollador Full‑Stack especializado en Frontend, Backend, Python y SQL. Experiencia en Vue.js, Laravel, APIs REST y bases de datos. Disponible para trabajo remoto internacional." />
   <meta name="robots" content="index,follow" />
+
+  <!-- Simple paralax -->
+    <script src="https://unpkg.com/simple-parallax-js@latest/dist/simple-parallax.min.js"></script>
+    <script src="js/parallax-init.js"></script>  <!-- tu archivo donde inicializas -->
+
 
   <!-- Canonical & hreflang -->
   <link rel="canonical" href="https://roman-myziuk-portfolio.vercel.app/" />
   <link rel="alternate" href="https://roman-myziuk-portfolio.vercel.app/" hreflang="es" />
   <link rel="alternate" href="https://roman-myziuk-portfolio.vercel.app/en/" hreflang="en" />
   <link rel="alternate" href="https://roman-myziuk-portfolio.vercel.app/" hreflang="x-default" />
-    <meta name="google-site-verification" content="RhvqQBugPMdLYNpBdTFJRi8oW4V5Rtr27KivbhZOD0g" />
+  <meta name="google-site-verification" content="RhvqQBugPMdLYNpBdTFJRi8oW4V5Rtr27KivbhZOD0g" />
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Roman Myziuk — Desarrollador Full‑Stack" />
@@ -21,13 +27,13 @@
   <meta property="og:description" content="Desarrollador Full‑Stack remoto especializado en Vue.js, Laravel, Python y SQL. Experiencia con APIs REST y bases de datos. Disponible para trabajo internacional." />
   <meta property="og:url" content="https://roman-myziuk-portfolio.vercel.app/" />
   <meta property="og:locale" content="es_ES" />
-  <meta property="og:image" content="https://roman-myziuk-portfolio.vercel.app/assets/roman-myziuk-og.jpg" />
+  <meta property="og:image" content="https://roman-myziuk-portfolio.vercel.app/images/Designer.png" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Roman Myziuk — Desarrollador Full‑Stack" />
   <meta name="twitter:description" content="Desarrollador Full‑Stack especializado en Frontend, Backend, Python y SQL." />
-  <meta name="twitter:image" content="https://roman-myziuk-portfolio.vercel.app/assets/roman-myziuk-og.jpg" />
+  <meta name="twitter:image" content="https://roman-myziuk-portfolio.vercel.app/images/Designer.png" />
 
   <style>
     :root { --bg:#0b1020; --card:#111735; --text:#e6ecff; --muted:#a9b2d4; --accent:#6ee7b7; --link:#8ab4ff; --border:#1f274d; }
@@ -111,6 +117,31 @@
   transition: all 0.25s ease;
   box-shadow: 0 6px 18px rgba(0,0,0,.35);
 }
+/* Fondo parallax detrás del contenido */
+.parallax-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1; /* detrás del contenido */
+}
+
+.parallax-background img {
+  width: 100%;
+  height: 120%;     /* más alto para el efecto */
+  object-fit: cover;
+  filter: blur(6px) brightness(0.7); /* difuminado + oscurecido */
+}
+
+/* Contenido principal encima */
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;         /* para contrastar con el fondo */
+  padding: 2rem;
+}
 
   </style>
 
@@ -180,6 +211,11 @@
   </script>
 </head>
 <body>
+<div class="parallax-background">
+    <img class="parallax" src="images/paralax.png" alt="Fondo decorativo">
+  </div>
+
+  <!-- Contenido principal -->
 <header>
   <div class="wrap">
     <nav aria-label="Principal">
@@ -197,6 +233,7 @@
     </nav>
   </div>
 </header>
+  <div class="content">  
 
 <main class="wrap">
   <section id="hero" class="hero" aria-label="Hero">
@@ -267,7 +304,7 @@
     <h2>Proyectos destacados</h2>
     <div class="grid cols-2">
       <article class="card">
-        <img src="images\pccretorimg.png" alt="Vista previa del proyecto" class="card-img">
+        <img  src="images\pccretorimg.png" alt="Vista previa del proyecto" class="card-img">
         <h3>PC‑Creator — Frontend Vue.js & Backend Laravel</h3>
         <p>
           Aplicación full‑stack con frontend en Vue.js y backend en Laravel. Buscador conectado a la API de Steam para generar recomendaciones de PCs gaming. Incluye base de datos SQL y API REST personalizada.
@@ -426,6 +463,20 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  document.addEventListener('DOMContentLoaded', function () {
+  var images = document.querySelectorAll('.parallax');
+  var parallaxInstance = new simpleParallax(images, {
+    scale: 1.4,
+    orientation: 'up',
+    // ... otras opciones según lo que quieras
+  });
+});
 </script>
+</div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/simple-parallax-js@latest/dist/simple-parallax.min.js"></script>
+  <script src="js/parallax-init.js"></script>
 </body>
 </html>
