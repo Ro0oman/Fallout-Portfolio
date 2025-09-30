@@ -8,12 +8,6 @@
   <title>Roman Myziuk — Desarrollador Full‑Stack (Frontend, Backend, Python, SQL) | Programador Remoto</title>
   <meta name="description" content="Desarrollador Full‑Stack especializado en Frontend, Backend, Python y SQL. Experiencia en Vue.js, Laravel, APIs REST y bases de datos. Disponible para trabajo remoto internacional." />
   <meta name="robots" content="index,follow" />
-
-  <!-- Simple paralax -->
-    <script src="https://unpkg.com/simple-parallax-js@latest/dist/simple-parallax.min.js"></script>
-    <script src="js/parallax-init.js"></script>  <!-- tu archivo donde inicializas -->
-
-
   <!-- Canonical & hreflang -->
   <link rel="canonical" href="https://roman-myziuk-portfolio.vercel.app/" />
   <link rel="alternate" href="https://roman-myziuk-portfolio.vercel.app/" hreflang="es" />
@@ -39,7 +33,7 @@
     :root { --bg:#0b1020; --card:#111735; --text:#e6ecff; --muted:#a9b2d4; --accent:#6ee7b7; --link:#8ab4ff; --border:#1f274d; }
     *{box-sizing:border-box}
     html,body{margin:0;padding:0}
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;}
     a{color:var(--link);text-decoration:none}
     a:hover{text-decoration:underline}
     header{position:sticky;top:0;background:rgba(11,16,32,.85);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--border);z-index:10}
@@ -47,7 +41,7 @@
     nav{display:flex;align-items:center;justify-content:space-between;height:64px}
     nav ul{display:flex;gap:1rem;list-style:none;margin:0;padding:0}
     .brand{font-weight:800;letter-spacing:.2px}
-    main{padding:2rem 0 4rem}
+    main{padding:2rem 0 4rem }
     section{padding:2rem 0;border-bottom:1px solid var(--border)}
     h1{font-size:2rem;margin:0 0 .5rem}
     h2{font-size:1.6rem;margin:0 0 .5rem}
@@ -125,15 +119,19 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  z-index: -1; /* detrás del contenido */
+  z-index: -2;
 }
 
 .parallax-background img {
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 120%;     /* más alto para el efecto */
-  object-fit: cover;
-  filter: blur(6px) brightness(0.7); /* difuminado + oscurecido */
+  height: 100%;
+  object-fit:fill;     /* rellena el viewport */
+  object-position: bottom;
+  filter: blur(2px) brightness(0.7);
 }
+
 
 /* Contenido principal encima */
 .content {
@@ -415,7 +413,7 @@
         <li><img src="icons/SQLLITE.svg" alt="PL/SQL"> PL/SQL & Procedimientos Almacenados</li>
         <li><img src="icons/sql.svg" alt="Databases"> MySQL, SQLite</li>
         <li><img src="icons/git.svg" alt="Git"> Git & Control de Versiones</li>
-        <li><img src="icons/api.svg" alt="Integración de API"> Integración & Testing de APIs</li>
+        <li><img src="icons/sql.svg" alt="Integración de API"> Integración & Testing de APIs</li>
       </ul>
     </article>
   </div>
@@ -461,22 +459,22 @@
   </div>
 </footer>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
 
-  document.addEventListener('DOMContentLoaded', function () {
-  var images = document.querySelectorAll('.parallax');
-  var parallaxInstance = new simpleParallax(images, {
-    scale: 1.4,
-    orientation: 'up',
-    // ... otras opciones según lo que quieras
-  });
-});
-</script>
+
 </div>
 
-  <!-- Scripts -->
-  <script src="https://unpkg.com/simple-parallax-js@latest/dist/simple-parallax.min.js"></script>
-  <script src="js/parallax-init.js"></script>
 </body>
+<script src="./js/simpleParallax.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var images = document.querySelectorAll('.parallax');
+    if (images.length) {
+      new simpleParallax(images, {
+        scale: 2,
+        orientation: 'down',
+      });
+    }
+  });
+</script>
+
 </html>
