@@ -112,25 +112,27 @@
   box-shadow: 0 6px 18px rgba(0,0,0,.35);
 }
 /* Fondo parallax detrás del contenido */
-.parallax-background {
+.parallax-wrapper {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
   z-index: -2;
+  overflow: hidden;
 }
 
-.parallax-background img {
+.parallax-wrapper img {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit:fill;     /* rellena el viewport */
-  object-position: bottom;
-  filter: blur(2px) brightness(0.7);
+  object-fit: cover;       /* siempre rellena todo el viewport */
+  object-position: center;
+  filter: blur(6px) brightness(0.7); /* difuminado + oscurecido */
 }
+
 
 
 /* Contenido principal encima */
@@ -209,9 +211,9 @@
   </script>
 </head>
 <body>
-<div class="parallax-background">
+  <div class="parallax-wrapper">
     <img class="parallax" src="images/paralax.png" alt="Fondo decorativo">
-  </div>
+</div>
 
   <!-- Contenido principal -->
 <header>
@@ -466,15 +468,24 @@
 </body>
 <script src="./js/simpleParallax.min.js"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
+   document.addEventListener('DOMContentLoaded', function () {
     var images = document.querySelectorAll('.parallax');
-    if (images.length) {
-      new simpleParallax(images, {
-        scale: 2,
-        orientation: 'down',
-      });
-    }
+    new simpleParallax(images, {
+      scale: 1.3,
+      orientation: 'up',
+      delay: 0.2,
+      transition: 'cubic-bezier(0,0,0,1)'
+    });
   });
+  // document.addEventListener('DOMContentLoaded', function () {
+  //   var images = document.querySelectorAll('.parallax');
+  //   if (images.length) {
+  //     new simpleParallax(images, {
+  //       scale: 2,
+  //       orientation: 'down',
+  //     });
+  //   }
+  // });
 </script>
 
 </html>
