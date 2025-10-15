@@ -1,4 +1,5 @@
 :root {
+  scroll-behavior: smooth;
   /* Colores principales */
   --bg: #0f0f0f;        /* fondo negro profundo */
   --card: #181818;      /* tarjetas gris muy oscuro */
