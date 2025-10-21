@@ -116,7 +116,7 @@
       <section id="about" aria-label="Sobre mí">
         <h2>Sobre mí</h2>
         <div class="sobremi">
-          
+
           <div>
             <p class="subtitle">Full‑Stack Developer — interfaces limpias, accesibles y responsivas</p>
             <p>Me
@@ -138,34 +138,60 @@
             </p>
           </div>
           <div class="profile-pic-wrapper">
-            <img  class="profile-pic" src="images/micara.jpeg" alt="">
+            <img class="profile-pic" src="images/micara.jpeg" alt="">
           </div>
         </div>
       </section>
 
-      <section id="experience" aria-label="Experiencia">
-        <h2>Experiencia</h2>
-        <div class="grid cols-2">
-          <article class="card">
-            <h3>Consultor Técnico · <a href="https://www.infoverity.com/es/" target="_blank"
-                rel="noopener">Infoverity</a></h3>
-            <p><strong>Ene 2024 – Actualidad</strong></p>
-            <p>
-              Consultoría técnica, desarrollo de Backends en Python, gestión de bases de datos SQL y tambien creo
-              interfaces frontend. Trabajo con equipos
-              internacionales y remotos.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Junior Full‑Stack Developer · <a href="https://tesigandia.com/" target="_blank" rel="noopener">TESI</a>
-            </h3>
-            <p><strong>Mar 2023 – Jul 2023</strong></p>
-            <p>
-              Desarrollo Frontend con React y Vue.js y Backend en Laravel y .NET. Creación de APIs REST y aplicaciones
-              completas
-              para plataformas de alto tráfico.
-            </p>
-          </article>
+      <section id="experience" aria-label="Experience" class="experience-section">
+        <h2 class="section-title">Experiencia</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Consultor Tecnico <a href="https://www.infoverity.com/es/" target="_blank"
+                  rel="noopener">Infoverity</a></h3>
+              <p class="date"><time datetime="2024-01">Enero 2024</time> – Actualidad</p>
+              <p> Consultoría técnica y desarrollo integral, con énfasis en backends en Python, diseño de bases de datos SQL e interfaces frontend. Colaboro con equipos interregionales (Norteamérica y EMEA) y contribuyo al desarrollo de productos basados ​​en datos utilizados por clientes empresariales.
+              </p>
+              <ul class="responsibilities" aria-label="Key responsibilities">
+                <li>Diseñar e implementar API RESTful y trabajadores en segundo plano en Python para respaldar los flujos de trabajo de ETL e integración de datos.</li>
+                <li>Gestionar y optimizar bases de datos relacionales (PostgreSQL / MS SQL): estrategia de indexación, ajuste de consultas y planificación de la migración.</li>
+                <li>Refactorizar código heredado (.NET) e introducir mejoras en la automatización de la canalización de CI para reducir las regresiones.</li>
+                <li>Automatice tareas repetitivas con scripts de Python para optimizar las implementaciones y las operaciones de datos.</li>
+                <li>Participe en ceremonias ágiles, revisiones de código y sesiones de diseño entre equipos para alinearse en soluciones escalables.</li>
+              </ul>
+              <ul class="tags">
+                <li>Python</li>
+                <li>SQL</li>
+                <li>MS SQL</li>
+                <li>React</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Junior Full‑Stack Developer · <a href="https://tesigandia.com/" target="_blank"
+                  rel="noopener">TESI</a></h3>
+              <p class="date"><time datetime="2023-03">Mar 2023</time> – Jul 2023</p>
+              <p> Contribuí a proyectos full-stack, gestionando responsabilidades frontend y backend en plataformas con alto tráfico. Trabajé con React y Vue.js en el lado del cliente y Laravel/.NET en el lado del servidor.
+              </p>
+              <ul class="responsibilities" aria-label="Key responsibilities">
+                <li>Desarrollé y utilicé API REST, diseñé flujos de autenticación y administré el estado en aplicaciones cliente complejas.</li>
+                <li>Se implementaron componentes de interfaz de usuario con un enfoque en la reutilización, la capacidad de respuesta y la accesibilidad..</li>
+                <li>Rendimiento optimizado para puntos finales del lado del servidor y rutas de renderizado del cliente para mejorar los tiempos de carga en condiciones de uso intensivo.</li>
+              </ul>
+              <ul class="tags">
+                <li>Vue.js</li>
+                <li>Laravel</li>
+                <li>Laravel / .NET</li>
+                <li>REST APIs</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -315,18 +341,6 @@
           <li><img src="flags/es-ct.svg" alt="Catalán"> Catalán/Valenciano <span class="muted">(Nativo)</span></li>
           <li><img src="flags/ua.svg" alt="Ucraniano"> Ucraniano <span class="muted">(Básico)</span></li>
         </ul>
-      </section>
-
-      <section id="faq" aria-label="Preguntas frecuentes">
-        <h2>Preguntas frecuentes</h2>
-        <article class="card">
-          <h3>¿Qué tipo de programador eres?</h3>
-          <p>Full‑Stack Developer con enfoque en Frontend. Stack: Vue.js, JavaScript, CSS3, Python, SQL y .NET.</p>
-          <h3>¿Aceptas trabajos remotos?</h3>
-          <p>Sí, disponibilidad para remoto internacional o híbrido.</p>
-          <h3>¿Qué tipo de proyectos te gustan?</h3>
-          <p>Interfaz moderna, accesible y responsiva; aplicaciones full‑stack con integración de APIs.</p>
-        </article>
       </section>
 
       <section id="contact" aria-label="Contacto">
