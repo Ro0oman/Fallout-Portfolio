@@ -1,7 +1,7 @@
 :root {
   scroll-behavior: smooth;
   /* Colores principales */
-  --bg: #0d0d0d;         /* Fondo principal negro profundo */
+  --bg: #f3edea;         /* Fondo principal negro profundo */
   --card: #ffffff;       /* Fondo de tarjetas o secciones */
   --text: #000000;       /* Texto principal blanco */
   --muted: #a8a8a8;      /* Texto secundario gris claro */
@@ -18,6 +18,18 @@
   /* Menú móvil */
   --menu-bg: rgba(26, 26, 26, 0.95);
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:#0d1117;
+    --text: #ffffff; 
+    --card: #131922; 
+    --text-light: #848484; 
+  }
+}
+
+
+
 .brand{
     color:var(--link)
 }
@@ -115,8 +127,13 @@ ul { margin: .25rem 0 .75rem 1.25rem; }
 .grid.cols-2 { grid-template-columns: repeat(2,minmax(0,1fr)); }
 .grid.cols-3 { grid-template-columns: repeat(3,minmax(0,1fr)); }
 
+.text{
+  color: var(--text);
+}
+
 .card {
   background: var(--card);
+  color: var(--text);
   padding: 1rem;
   border-radius: 12px;
   border: 1px solid var(--border);
@@ -265,8 +282,7 @@ i{
 }
 
 
-body{
-background: #f3edea center center/cover no-repeat;}
+
 
 .sobremi{
   display: flex;
@@ -339,14 +355,13 @@ font-weight: 600;
 
 
 .timeline-content .date {
-color: #666;
 font-size: 0.9rem;
 margin-bottom: 0.6rem;
 }
 
 
 .timeline-content p {
-color: #333;
+color: var(--text-light);
 line-height: 1.5;
 margin-bottom: 0.8rem;
 }
