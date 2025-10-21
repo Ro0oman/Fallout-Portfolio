@@ -6,7 +6,7 @@
   --text: #000000;       /* Texto principal blanco */
   --muted: #a8a8a8;      /* Texto secundario gris claro */
   --accent: #3b82f6;     /* Azul destacado (botones, énfasis) */
-  --accent-light: #56bae1;     /* Azul destacado (botones, énfasis) */
+  --accent-light: #57a2e8;     /* Azul destacado (botones, énfasis) */
   --link: #698dd9;       /* Azul más intenso para enlaces */
   --border: #2a2a2a;     /* Bordes sutiles y divisores */
 
@@ -163,7 +163,7 @@ i{
 .icon-list, .lang-list { list-style: none; padding: 0; margin: 0; }
 .icon-list li, .lang-list li { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.6rem; font-size: 0.95rem; }
 .icon-list img { width: 28px; height: 28px; object-fit: contain; flex-shrink: 0; filter: drop-shadow(0 0 2px rgb(255,255,255)); }
-.lang-list img { width: 20px; height: 14px; border-radius: 2px; border: 1px solid var(--border); flex-shrink: 0; }
+.lang-list img { width: 20px; height: 14px; border-radius: 2px; flex-shrink: 0; }
 
 /* Botón menú móvil */
 .menu-toggle {
