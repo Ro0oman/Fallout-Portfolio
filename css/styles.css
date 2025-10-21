@@ -380,3 +380,48 @@ margin-left: 1rem;
 
     .responsibilities{margin:8px 0 0;padding-left:18px}
     .responsibilities li{margin:6px 0;color:var(--text)}
+
+
+
+    .hero-header h1, .hero-header h2 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+.hero-header.visible h1,
+.hero-header.visible h2 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn.primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.icon-list-header li {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+.icon-list-header li.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-item {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.6s ease-out;
+}
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.btn.primary:hover {
+  box-shadow: 0 0 15px rgba(0,123,255,0.7);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}

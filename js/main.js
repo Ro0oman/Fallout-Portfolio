@@ -32,6 +32,25 @@ navLinks.querySelectorAll('a').forEach(link => {
     toggle.classList.remove('active');
     navLinks.classList.remove('active');
   });
+  
 });
 
 
+// JS simple
+window.addEventListener('load', () => {
+  document.querySelector('.hero-header').classList.add('visible');
+});
+
+
+const icons = document.querySelectorAll('.icon-list-header li');
+icons.forEach((icon, i) => {
+  setTimeout(() => icon.classList.add('visible'), i*150);
+});
+
+const items = document.querySelectorAll('.timeline-item');
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, {threshold: 0.2});
+items.forEach(item => revealObserver.observe(item));
