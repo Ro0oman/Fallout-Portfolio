@@ -54,3 +54,28 @@ const revealObserver = new IntersectionObserver((entries) => {
   });
 }, {threshold: 0.2});
 items.forEach(item => revealObserver.observe(item));
+
+// Slider buttons logic
+document.querySelectorAll('.slider-container').forEach(container => {
+  const wrapper = container.querySelector('.slider-wrapper');
+  const prevBtn = container.querySelector('.prev');
+  const nextBtn = container.querySelector('.next');
+
+  if (prevBtn && nextBtn && wrapper) {
+    prevBtn.addEventListener('click', () => {
+      if (wrapper.scrollLeft <= 0) {
+        wrapper.scrollTo({ left: wrapper.scrollWidth, behavior: 'smooth' });
+      } else {
+        wrapper.scrollBy({ left: -wrapper.offsetWidth, behavior: 'smooth' });
+      }
+    });
+
+    nextBtn.addEventListener('click', () => {
+      if (wrapper.scrollLeft + wrapper.offsetWidth >= wrapper.scrollWidth - 10) {
+        wrapper.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        wrapper.scrollBy({ left: wrapper.offsetWidth, behavior: 'smooth' });
+      }
+    });
+  }
+});
