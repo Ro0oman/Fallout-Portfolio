@@ -143,6 +143,108 @@ ul { margin: .25rem 0 .75rem 1.25rem; }
 .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 18px rgba(0,0,0,.35);
+  cursor: pointer;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.85);
+  backdrop-filter: blur(10px);
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal.active {
+  display: flex;
+  opacity: 1;
+}
+
+.modal-content {
+  background: rgba(23, 23, 23, 0.8);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(20px);
+  padding: 2.5rem;
+  width: 90%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  border-radius: 16px;
+  color: var(--text-light);
+  transform: scale(0.9);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.modal.active .modal-content {
+  transform: scale(1);
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: color 0.3s;
+}
+
+.close-modal:hover {
+  color: var(--accent-light);
+}
+
+.modal-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .modal-grid { grid-template-columns: 1fr; }
+  .modal-content { padding: 1.5rem; }
+}
+
+.modal-info h2 {
+  margin-top: 0;
+  color: var(--accent-light);
+  font-size: 2rem;
+}
+
+.modal-meta {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.modal-description {
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.modal-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.modal-slider-container {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
 }
 
 .card-img, .parallax {
@@ -190,14 +292,21 @@ ul { margin: .25rem 0 .75rem 1.25rem; }
   background: var(--muted);
 }
 
-.slider-image {
+.slider-wrapper > img, 
+.slider-wrapper > a {
   flex: 0 0 100%;
+  width: 100%;
+  scroll-snap-align: center;
+  display: block;
+}
+
+.slider-image {
   width: 100%;
   height: 180px;
   object-fit: cover;
-  scroll-snap-align: center;
   border-radius: 12px;
   margin-bottom: 0; 
+  display: block;
 }
 
 /* Slider buttons */
@@ -230,6 +339,20 @@ ul { margin: .25rem 0 .75rem 1.25rem; }
 
 .slider-btn:hover {
   background: rgba(59, 130, 246, 0.8);
+}
+
+/* Certifications Slider Specifics */
+#certifications-slider .slider-image {
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  background: #111;
+}
+
+#certifications-slider .slider-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  border: 1px solid var(--border);
 }
 
 
