@@ -1,0 +1,16 @@
+{
+  "name": "Roman Myziuk Portfolio",
+  "short_name": "Roman Portfolio",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0d1117",
+  "theme_color": "#3b82f6",
+  "description": "Portfolio of Roman Myziuk - Software Developer",
+  "icons": [
+    {
+      "src": "images/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

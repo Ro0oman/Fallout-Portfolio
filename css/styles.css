@@ -75,6 +75,7 @@ main { padding: 2rem 0 4rem;  }
 section { padding: 2rem 0; border-bottom: 1px solid var(--border); background-color: #0d0d0d00; margin-top: 20px; border-radius: 10px; padding: 20px; }
 
 h1 { font-size: 2rem; margin: 0 0 .5rem; }
+.section-title-alt { font-size: 2rem; margin: 0 0 .5rem; font-weight: bold; }
 h2 { font-size: 1.6rem; margin: 0 0 .5rem; color: var(--accent-light); }
 h3 { font-size: 1.15rem; margin: 1.2rem 0 .35rem; }
 
