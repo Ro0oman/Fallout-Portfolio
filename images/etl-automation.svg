@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Python AI ETL documentation workflow</title>
+  <desc id="desc">A dark technical dashboard showing XML workflows transformed into AI-assisted documentation, diagrams, SQL analysis, and measurable automation results.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#10231f"/>
+      <stop offset="1" stop-color="#07130f"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)"/>
+  <g opacity="0.16" stroke="#7dd3fc" stroke-width="1">
+    <path d="M0 90h960M0 180h960M0 270h960M0 360h960M0 450h960"/>
+    <path d="M120 0v540M240 0v540M360 0v540M480 0v540M600 0v540M720 0v540M840 0v540"/>
+  </g>
+  <g transform="translate(64 62)">
+    <rect width="832" height="416" rx="22" fill="#0f172a" opacity="0.88" stroke="#1f3b4d"/>
+    <g transform="translate(36 34)">
+      <text x="0" y="0" fill="#e5fdf5" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">Python + AI ETL Documentation</text>
+      <text x="0" y="34" fill="#93c5fd" font-family="Segoe UI, Arial, sans-serif" font-size="17">PowerCenter XML workflows converted into technical docs</text>
+    </g>
+    <g transform="translate(42 118)" font-family="Segoe UI, Arial, sans-serif">
+      <rect width="214" height="174" rx="14" fill="#111827" stroke="#2563eb"/>
+      <text x="20" y="38" fill="#bfdbfe" font-size="18" font-weight="700">XML Sources</text>
+      <text x="20" y="76" fill="#d1d5db" font-size="15">&lt;workflow&gt;</text>
+      <text x="20" y="104" fill="#d1d5db" font-size="15">&lt;mapping&gt;</text>
+      <text x="20" y="132" fill="#d1d5db" font-size="15">&lt;target&gt;</text>
+    </g>
+    <g transform="translate(336 118)" font-family="Segoe UI, Arial, sans-serif">
+      <circle cx="88" cy="86" r="86" fill="#06281e" stroke="url(#accent)" stroke-width="3" filter="url(#glow)"/>
+      <text x="88" y="76" fill="#dcfce7" text-anchor="middle" font-size="24" font-weight="700">Python</text>
+      <text x="88" y="106" fill="#93c5fd" text-anchor="middle" font-size="18">AI APIs</text>
+      <path d="M-66 86H-8M184 86h64" stroke="url(#accent)" stroke-width="5" stroke-linecap="round"/>
+      <path d="M235 70l24 16-24 16" fill="none" stroke="#60a5fa" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g transform="translate(626 118)" font-family="Segoe UI, Arial, sans-serif">
+      <rect width="166" height="174" rx="14" fill="#111827" stroke="#10b981"/>
+      <text x="20" y="38" fill="#bbf7d0" font-size="18" font-weight="700">Outputs</text>
+      <text x="20" y="75" fill="#d1fae5" font-size="15">Docs</text>
+      <text x="20" y="103" fill="#d1fae5" font-size="15">Diagrams</text>
+      <text x="20" y="131" fill="#d1fae5" font-size="15">SQL analysis</text>
+    </g>
+    <g transform="translate(42 332)" font-family="Segoe UI, Arial, sans-serif">
+      <rect width="226" height="66" rx="12" fill="#071b15" stroke="#34d399"/>
+      <text x="24" y="28" fill="#bbf7d0" font-size="17" font-weight="700">300+ workflows</text>
+      <text x="24" y="50" fill="#a7f3d0" font-size="14">processed from ETL metadata</text>
+      <rect x="288" width="226" height="66" rx="12" fill="#091a2f" stroke="#60a5fa"/>
+      <text x="312" y="28" fill="#bfdbfe" font-size="17" font-weight="700">80-90% less manual work</text>
+      <text x="312" y="50" fill="#bfdbfe" font-size="14">structured documentation flow</text>
+      <rect x="576" width="214" height="66" rx="12" fill="#161526" stroke="#a78bfa"/>
+      <text x="600" y="28" fill="#ddd6fe" font-size="17" font-weight="700">$25k+ opportunity impact</text>
+      <text x="600" y="50" fill="#ddd6fe" font-size="14">enterprise process improvement</text>
+    </g>
+  </g>
+</svg>

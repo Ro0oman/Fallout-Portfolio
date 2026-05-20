@@ -1,14 +1,14 @@
 # Roman Myziuk - Software Developer
 
-¡Hola! Soy **Roman Myziuk**, un desarrollador **Full Stack** con enfoque en la creación de soluciones escalables y limpias.
+¡Hola! Soy **Roman Myziuk**, un desarrollador **Full Stack** con experiencia en aplicaciones web, APIs REST, automatización Python e IA aplicada a workflows ETL.
 
 [Ver mi Portafolio](https://roman-myziuk-portfolio.vercel.app/)
 
 ## Sobre mí
 
-Desarrollador de Software Full Stack con enfoque en la creación de soluciones escalables y limpias. Mi experiencia híbrida entre el desarrollo puro (Vue.js, Laravel, .NET) y la consultoría técnica me permite no solo escribir código eficiente, sino entender el impacto de negocio detrás de cada funcionalidad.
+Desarrollador de Software Full Stack con experiencia en Vue.js, React, Laravel, PHP, .NET, Python, SQL y APIs REST. Trabajo en aplicaciones web, componentes reutilizables, integraciones API y soluciones internas orientadas a rendimiento, escalabilidad y mejora de procesos.
 
-He trabajado en proyectos internacionales (EE.UU. y EMEA), colaborando en migraciones y optimizando flujos de datos. Me centro el rendimiento, la usabilidad y las buenas prácticas (Clean Code). Actualmente en **Infoverity**, me apasiona diseñar arquitecturas completas, desde la base de datos hasta el frontend.
+En **Infoverity** he creado automatizaciones con Python e IA aplicada para analizar y documentar workflows ETL complejos, procesando más de 300 workflows de PowerCenter y reduciendo el trabajo manual en torno al 80-90%. También he trabajado en proyectos internacionales (EE.UU. y EMEA), bases de datos SQL Server y Oracle, documentación técnica y entornos Agile/Scrum.
 
 ---
 
@@ -17,8 +17,8 @@ He trabajado en proyectos internacionales (EE.UU. y EMEA), colaborando en migrac
 ### Software Developer en Infoverity
 *jun. 2025 - actualidad*
 
-Desarrollo de interfaces y componentes con Python y .NET Core, priorizando escalabilidad, rendimiento y mantenibilidad del código. Implementación de integraciones backend y servicios API REST, optimizando flujos de datos entre sistemas MDM/PIM. Enfoque en arquitecturas frontend modernas con Vue.js y React, incorporando pipelines de CI/CD.
-**Tecnologías:** .NET Core, Python, SQL Server, REST APIs, JSON, Agile.
+Desarrollo de aplicaciones internas, automatizaciones e integraciones con Python, .NET, JavaScript, SQL y APIs REST. Creación de soluciones con IA aplicada para documentación técnica de workflows ETL, procesando más de 300 flujos de PowerCenter y reduciendo el esfuerzo manual en torno al 80-90%.
+**Tecnologías:** .NET Core, Python, SQL Server, Oracle, PL/SQL, PowerCenter, REST APIs, IA aplicada.
 
 ### Technical Consultant en Infoverity
 *ene. 2024 - jun. 2025*
@@ -36,23 +36,28 @@ Desarrollo full-stack con Laravel y Vue.js. Integración de la API de Twilio par
 
 ## Proyectos destacados
 
-### 1. [Reppy](https://reppy-weld.vercel.app/)
+### 1. Automatización de documentación ETL con Python e IA
+Sistema para documentar workflows ETL de PowerCenter desde XML, generando resúmenes, diagramas y análisis técnico con IA aplicada. Procesa más de 300 workflows y reduce el trabajo manual en torno al 80-90%.
+
+- **Tecnologías:** Python, IA aplicada, PowerCenter, XML, ETL, SQL, Oracle, SQL Server
+
+### 2. [Reppy](https://reppy-weld.vercel.app/)
 Plataforma premium de seguimiento de calistenia con algoritmos de volumen inteligente, heatmaps tácticos y rankings globales. Diseñé Reppy para ofrecer una experiencia de entrenamiento de calistenia premium, uniendo métricas avanzadas como el tonelaje movido con una interfaz altamente visual y gamificada.
 
-- **Tecnologías:** Vue 3, Pinia, Node.js, Express, PostgreSQL, TailwindCSS
+- **Tecnologías:** Vue 3, Pinia, PostgreSQL, TailwindCSS, Vercel
 
-### 2. [React Component Codex](https://studio-six-theta-47.vercel.app/)
-Una librería de componentes moderna diseñada para ser el núcleo estético de mis aplicaciones. Enfocada en la accesibilidad, el rendimiento y una experiencia de desarrollador fluida. Biblioteca de componentes moderna y reutilizable construida con Next.js, React, TypeScript y TailwindCSS. Incluye un playground interactivo para pruebas en tiempo real.
+### 3. [React Component Codex](https://studio-six-theta-47.vercel.app/)
+Una librería de componentes moderna diseñada para ser el núcleo estético de mis aplicaciones. Enfocada en la accesibilidad, el rendimiento y una experiencia de desarrollador fluida. Biblioteca de componentes moderna y reutilizable construida con Next.js, React y TailwindCSS. Incluye un playground interactivo para pruebas en tiempo real.
 
-- **Tecnologías:** Next.js, TypeScript, Tailwind, ShadCN/UI, Vercel
+- **Tecnologías:** Next.js, React, Tailwind, ShadCN/UI, Vercel
 - **GitHub:** [React Component Codex en GitHub](https://github.com/Ro0oman/React-Component-Codex)
 
-### 3. [EcoTrack](https://eco-track-react-app.vercel.app/dashboard)
+### 4. [EcoTrack](https://eco-track-react-app.vercel.app/dashboard)
 Aplicación de gestión financiera con sincronización en la nube. Permite el seguimiento de ingresos/egresos, visualización mediante gráficas dinámicas y una interfaz optimizada para dispositivos móviles.
 
-- **Tecnologías:** Next.js, Firebase, Chart.js, TailwindCSS, TypeScript
+- **Tecnologías:** Next.js, Firebase, Chart.js, TailwindCSS
 
-### 4. [FitAnalyzer](https://fit-analyzer.vercel.app/)
+### 5. [FitAnalyzer](https://fit-analyzer.vercel.app/)
 Plataforma avanzada de análisis deportivo. Conecta con Strava para extraer actividades, calcular carga de entrenamiento y predecir estados de forma mediante algoritmos personalizados.
 
 - **Tecnologías:** Next.js, Strava API, PostgreSQL, Antigravity AI, Vercel
@@ -64,19 +69,19 @@ Plataforma avanzada de análisis deportivo. Conecta con Strava para extraer acti
 ### ⚡ Frontend
 - React & Next.js
 - Vue.js (Composition API)
-- TypeScript
+- JavaScript
 - Tailwind CSS & ShadCN/UI
 
 ### 🖥️ Backend & Cloud
-- Python
+- Python Automation & AI APIs
 - .NET Core / C#
+- Laravel, PHP & REST APIs
 - Azure & Cloud Fundamentals
-- REST APIs & Microservicios
 
 ### ⚙️ Datos & Herramientas
-- SQL Server & PostgreSQL
+- SQL Server, PostgreSQL, Oracle & PL/SQL
 - Git, CI/CD & GitHub Actions
-- Procesos ETL & Integración
+- PowerCenter, XML, ETL & documentación técnica
 - Clean Code & Agile
 
 ---
