@@ -98,6 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.card[data-title]').forEach(card => {
       card.addEventListener('click', (e) => {
         if (e.target.closest('.slider-btn')) return;
+        if (e.target.closest('a[href]')) return;
 
         const title = card.getAttribute('data-title');
         const why = card.getAttribute('data-why');
@@ -106,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const timeLabel = card.getAttribute('data-time-label') || 'Tiempo';
         const tech = card.getAttribute('data-tech');
         const description = card.getAttribute('data-description');
-        const images = card.getAttribute('data-images').split(',');
+        const images = (card.getAttribute('data-images') || '').split(',').filter(Boolean);
 
         modalTitle.textContent = title;
         modalWhy.innerHTML = `<strong>${whyLabel}:</strong> ${why}`;
