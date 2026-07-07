@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://roman-myziuk-portfolio.vercel.app/sitemap.xml
+Sitemap: https://romandev.app/sitemap.xml
