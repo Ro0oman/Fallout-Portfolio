@@ -1,15 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Parallax Initialization
-  const parallaxImages = document.querySelectorAll('.parallax');
-  if (parallaxImages.length && typeof simpleParallax !== 'undefined') {
-    new simpleParallax(parallaxImages, {
-      scale: 1.5,
-      orientation: 'up',
-      delay: 1,
-      transition: 'cubic-bezier(0,0,0,1)'
-    });
-  }
-
   // Mobile Menu Toggle
   const toggle = document.querySelector('.menu-toggle');
   const navLinks = document.querySelector('.nav-links');
