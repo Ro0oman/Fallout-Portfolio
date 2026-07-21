@@ -239,6 +239,42 @@
         <div class="grid cols-2">
 
           <article class="card"
+            data-title="Valencia Marathon Dashboard — Running analytics"
+            data-why-label="Motivation"
+            data-why="I'm training for a sub-4h marathon and no app crossed my watch data (.fit) with my own physiology: personal heart-rate zones, aerobic decoupling and a success probability that evolves with me. So I built it."
+            data-time-label="Stack"
+            data-time="Node.js · Express · Vanilla JS (no framework) · Docker · Coolify CI/CD"
+            data-tech="Node.js, Express, JavaScript (ES modules), fit-file-parser, HMAC auth, CSP, WCAG AA, Playwright, Docker, Coolify"
+            data-description="Mobile web app to steer sub-4h marathon training. Upload the watch .fit and it's parsed server-side (Node): real pace (time/distance), aerobic decoupling (pace:HR by halves, Pw:Hr style), time in HR zones, per-km splits with grade-adjusted pace (GAP, Minetti) and a 0-100 session score weighted by session type. Every analysis is persisted and archived per day. In Progress, a sub-4 probability blending durability, aerobic engine, efficiency and consistency, with its trend over time, plus cadence, ACWR (load:risk, injury guard) and marathon-pace HR cost trends. Security: expiring HMAC token, brute-force rate-limiting, CSP and headers. Accessible (WCAG AA, ARIA), self-hosted fonts and CI/CD deploy with Docker on Coolify."
+            data-images="../images/entreno-valencia-1.png,../images/entreno-valencia-2.png,../images/entreno-valencia-4.png,../images/entreno-valencia-3.png">
+            <div class="slider-container">
+              <div class="slider-wrapper">
+                <img class="slider-image" src="../images/entreno-valencia-1.png" alt="Valencia Marathon Dashboard — session score and .fit analysis" loading="lazy">
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="card-badge">Personal project</span>
+              <h3>Valencia Marathon Dashboard</h3>
+              <p class="card-lead">
+                Running analytics app for a sub-4h marathon: import the watch .fit, analyze it (decoupling, HR zones, GAP, 0-100 score) and project your success probability with its trend over time.
+              </p>
+              <ul class="card-highlights">
+                <li>Server-side .fit parsing in Node: real pace, aerobic decoupling, time-based HR zones and grade-adjusted pace</li>
+                <li>0-100 session score and sub-4 probability with an evolution curve</li>
+                <li>Trends: cadence, ACWR (load:risk) and marathon-pace HR cost</li>
+                <li>Security: expiring HMAC token, rate-limiting, CSP · WCAG AA a11y</li>
+                <li>Vanilla JavaScript, no framework · CI/CD deploy with Docker on Coolify</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">JavaScript</span><span class="tag">Playwright</span><span class="tag">Docker</span>
+              </div>
+              <p class="card-links">
+                <a href="https://github.com/Ro0oman/entreno-valencia" target="_blank" rel="noopener">GitHub</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="card"
             data-title="ETL Documentation Automation"
             data-why="I built it to turn complex ETL workflows into clear technical documentation, reducing repetitive manual work and improving traceability for enterprise data pipelines."
             data-time="300+ workflows processed · 80-90% less manual work"

@@ -294,6 +294,42 @@
         <h2>Proyectos destacados</h2>
         <div class="grid cols-2 gap-12">
 
+          <article class="card"
+            data-title="Panel Maratón Valencia — Análisis de running"
+            data-why-label="Motivo"
+            data-why="Entreno para un maratón sub-4h y ninguna app cruzaba los datos del reloj (.fit) con mi fisiología concreta: zonas de pulso propias, desacople aeróbico y una probabilidad de éxito que evolucionara conmigo. Me la construí."
+            data-time-label="Stack"
+            data-time="Node.js · Express · JS vanilla (sin framework) · Docker · Coolify CI/CD"
+            data-tech="Node.js, Express, JavaScript (ES modules), fit-file-parser, HMAC auth, CSP, WCAG AA, Playwright, Docker, Coolify"
+            data-description="Web app móvil para pilotar la preparación de un maratón sub-4h. Sube el .fit del reloj y lo parsea en el servidor (Node): ritmo real (tiempo/distancia), desacople aeróbico (ritmo:FC por mitades, estilo Pw:Hr), tiempo en zonas de pulso, splits con GAP ajustado por pendiente (Minetti) y una nota de sesión 0-100 ponderada según el tipo de entreno. Persiste cada análisis y lo archiva por día. En Progreso, una probabilidad de sub-4 que combina durabilidad, motor aeróbico, eficiencia y constancia, con su curva en el tiempo, más tendencias de cadencia, ACWR (carga:riesgo, anti-lesión) y coste de pulso del ritmo maratón. Seguridad: token HMAC con caducidad, rate-limiting anti fuerza bruta, CSP y cabeceras. Accesible (WCAG AA, ARIA), fuentes self-hosteadas y deploy CI/CD con Docker en Coolify."
+            data-images="images/entreno-valencia-1.png,images/entreno-valencia-2.png,images/entreno-valencia-4.png,images/entreno-valencia-3.png">
+            <div class="slider-container">
+              <div class="slider-wrapper">
+                <img class="slider-image" src="images/entreno-valencia-1.png" alt="Panel Maratón Valencia — nota de la sesión y análisis del .fit" loading="lazy">
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="card-badge">Proyecto personal</span>
+              <h3>Panel Maratón Valencia</h3>
+              <p class="card-lead">
+                App de análisis de running para un maratón sub-4h: importa el .fit del reloj, lo analiza (desacople, zonas, GAP, nota 0-100) y proyecta tu probabilidad de éxito con su curva en el tiempo.
+              </p>
+              <ul class="card-highlights">
+                <li>Parseo de .fit en Node: ritmo real, desacople aeróbico, zonas por tiempo y GAP por pendiente</li>
+                <li>Nota de sesión 0-100 y probabilidad de sub-4 con su curva de evolución</li>
+                <li>Tendencias: cadencia, ACWR (carga:riesgo) y coste de pulso del ritmo maratón</li>
+                <li>Seguridad: token HMAC con caducidad, rate-limiting, CSP · a11y WCAG AA</li>
+                <li>JavaScript vanilla sin framework · Deploy CI/CD con Docker en Coolify</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">JavaScript</span><span class="tag">Playwright</span><span class="tag">Docker</span>
+              </div>
+              <p class="card-links">
+                <a href="https://github.com/Ro0oman/entreno-valencia" target="_blank" rel="noopener">GitHub</a>
+              </p>
+            </div>
+          </article>
+
           <article class="card "
             data-title="Automatización de documentación ETL"
             data-why-label="Motivo"
