@@ -27,12 +27,22 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   const items = document.querySelectorAll('.timeline-item');
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) entry.target.classList.add('visible');
-    });
-  }, { threshold: 0.2 });
-  items.forEach(item => revealObserver.observe(item));
+  const revealAll = () => items.forEach(item => item.classList.add('visible'));
+
+  if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.2 });
+    items.forEach(item => revealObserver.observe(item));
+    // Red de seguridad: si el observer no dispara, no dejar el contenido invisible
+    setTimeout(() => {
+      if (!document.querySelector('.timeline-item.visible')) revealAll();
+    }, 3000);
+  } else {
+    revealAll();
+  }
 
   // Slider Logic (Dynamic for all sliders)
   document.querySelectorAll('.slider-container').forEach(container => {
