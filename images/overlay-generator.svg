@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="ogTitle ogDesc">
+  <title id="ogTitle">OverlayGenerator — Claude skill for OBS overlay packs</title>
+  <desc id="ogDesc">A dark streaming layout showing an OBS scene with alerts, chat and goal overlays plus a control panel dock.</desc>
+  <defs>
+    <linearGradient id="ogBg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#171033"/>
+      <stop offset="1" stop-color="#090b18"/>
+    </linearGradient>
+    <linearGradient id="ogAccent" x1="0" x2="1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+    <filter id="ogGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="960" height="540" fill="url(#ogBg)"/>
+  <g opacity="0.14" stroke="#c4b5fd" stroke-width="1">
+    <path d="M0 90h960M0 180h960M0 270h960M0 360h960M0 450h960"/>
+    <path d="M120 0v540M240 0v540M360 0v540M480 0v540M600 0v540M720 0v540M840 0v540"/>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="64" y="76" fill="#ede9fe" font-size="30" font-weight="700">OverlayGenerator</text>
+    <text x="64" y="104" fill="#a5b4fc" font-size="17">Claude skill · OBS overlay pack generator</text>
+
+    <!-- scene preview -->
+    <g transform="translate(64 132)">
+      <rect width="560" height="330" rx="18" fill="#0f172a" opacity="0.9" stroke="#3b2f63"/>
+      <rect x="18" y="18" width="524" height="200" rx="12" fill="#111b31" stroke="#1f3b4d"/>
+      <text x="40" y="60" fill="#94a3b8" font-size="15">Main scene · browser source</text>
+      <!-- alert -->
+      <g filter="url(#ogGlow)">
+        <rect x="40" y="80" width="260" height="56" rx="12" fill="#1e1b4b" stroke="url(#ogAccent)" stroke-width="2"/>
+      </g>
+      <text x="58" y="104" fill="#ede9fe" font-size="15" font-weight="600">New sub · alert</text>
+      <text x="58" y="124" fill="#a7f3d0" font-size="13">raids · bits · subs</text>
+      <!-- chat -->
+      <rect x="330" y="80" width="192" height="120" rx="12" fill="#0b1324" stroke="#334155"/>
+      <text x="346" y="102" fill="#94a3b8" font-size="13">chat</text>
+      <g fill="#cbd5e1" font-size="12">
+        <text x="346" y="124">viewer: vamos!</text>
+        <text x="346" y="144">mod: !overlay on</text>
+        <text x="346" y="164">viewer: gg</text>
+      </g>
+      <!-- goal bar -->
+      <text x="18" y="252" fill="#94a3b8" font-size="14">Sub goal</text>
+      <rect x="18" y="262" width="524" height="16" rx="8" fill="#1f2937"/>
+      <rect x="18" y="262" width="340" height="16" rx="8" fill="url(#ogAccent)"/>
+      <text x="18" y="306" fill="#64748b" font-size="13">starting soon · brb · ending · main</text>
+    </g>
+
+    <!-- control dock -->
+    <g transform="translate(656 132)">
+      <rect width="240" height="330" rx="18" fill="#130f28" opacity="0.95" stroke="#3b2f63"/>
+      <text x="22" y="40" fill="#ede9fe" font-size="17" font-weight="600">Control panel</text>
+      <text x="22" y="62" fill="#a5b4fc" font-size="13">OBS custom dock</text>
+      <g>
+        <rect x="22" y="80" width="196" height="40" rx="10" fill="#1e1b4b" stroke="#6d28d9"/>
+        <text x="40" y="105" fill="#ddd6fe" font-size="14">Install in OBS</text>
+        <rect x="22" y="130" width="196" height="40" rx="10" fill="#0b1324" stroke="#334155"/>
+        <text x="40" y="155" fill="#cbd5e1" font-size="14">Toggle alerts</text>
+        <rect x="22" y="180" width="196" height="40" rx="10" fill="#0b1324" stroke="#334155"/>
+        <text x="40" y="205" fill="#cbd5e1" font-size="14">Switch scene</text>
+        <rect x="22" y="230" width="196" height="40" rx="10" fill="#0b1324" stroke="#334155"/>
+        <text x="40" y="255" fill="#cbd5e1" font-size="14">Goal +1</text>
+      </g>
+      <text x="22" y="300" fill="#34d399" font-size="13">WebSocket · local · no servers</text>
+    </g>
+  </g>
+</svg>

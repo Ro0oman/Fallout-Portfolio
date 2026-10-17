@@ -251,6 +251,43 @@
             </div>
           </article>
 
+          <article class="card"
+            data-title="OverlayGenerator — Claude skill for OBS"
+            data-why-label="Why"
+            data-why="Building stream overlays in OBS means hours of cropping images, placing sources and wrestling with scenes, and template packs leave every channel looking the same. I wanted Claude to design the whole pack from the actual channel, and to install itself."
+            data-time-label="Stack"
+            data-time="Claude skill · HTML/CSS/JS · OBS WebSocket · Twitch chat"
+            data-tech="Claude Skill, HTML, CSS, JavaScript, OBS Studio 28+, OBS WebSocket, browser sources, Twitch chat, pack.json"
+            data-description="A Claude skill that designs a complete OBS overlay pack tailored to a specific Twitch channel. You give it your channel (or describe the stream, screenshots optional), it researches the content and tone, asks a few questions and proposes two design directions; you pick one and it returns a zip with scenes (starting soon, be right back, ending and main), alerts for subs, raids and bits, on-screen chat, a sub goal bar and custom pieces such as counters. It ships a control panel that docks into OBS as a custom dock, with buttons, hotkeys and Twitch chat commands restricted to mods, and an Install in OBS button that creates and positions scenes and sources over the WebSocket, repairing rather than duplicating when they already exist. It includes preview.html to see the pack before opening OBS, plus automatic design checks: overlap with the game HUD, screen space, text size and contrast. Everything runs locally, with no accounts or servers, reading Twitch chat anonymously. v1 beta: alerts and chat are Twitch-only, tested on Windows."
+            data-images="../images/overlay-generator.svg">
+            <div class="slider-container">
+              <div class="slider-wrapper">
+                <img class="slider-image" src="../images/overlay-generator.svg" alt="OverlayGenerator — OBS overlay pack with control panel" loading="lazy">
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="card-badge">Personal project</span>
+              <h3>OverlayGenerator — Claude skill</h3>
+              <p class="card-lead">
+                A Claude skill that designs and installs a complete OBS overlay pack tailored to a Twitch channel: scenes, alerts, chat, goals and a control panel in one zip.
+              </p>
+              <ul class="card-highlights">
+                <li>Designed from the real channel, not a template: it proposes two directions and you choose</li>
+                <li>Full pack: starting soon/brb/ending scenes, sub, raid and bits alerts, chat and sub goal</li>
+                <li>Control panel as an OBS dock with buttons, hotkeys and mod-only chat commands</li>
+                <li>Install in OBS button: creates and positions scenes and sources over the WebSocket, repairing instead of duplicating</li>
+                <li>Design checks (HUD overlap, screen space, text size, contrast) and preview.html before opening OBS</li>
+                <li>Runs locally, no accounts or servers, reading Twitch chat anonymously</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Claude Skill</span><span class="tag">JavaScript</span><span class="tag">HTML/CSS</span><span class="tag">OBS WebSocket</span><span class="tag">Twitch</span>
+              </div>
+              <p class="card-links">
+                <a href="https://github.com/Ro0oman/OverlayGenerator-Claude-Skill" target="_blank" rel="noopener">GitHub</a>
+              </p>
+            </div>
+          </article>
+
           <article class="card "
             data-title="ETL documentation automation"
             data-why-label="Why"
