@@ -111,7 +111,14 @@ document.addEventListener('DOMContentLoaded', function () {
         modalTitle.textContent = title;
         modalWhy.innerHTML = `<strong>${whyLabel}:</strong> ${why}`;
         modalTime.innerHTML = `<strong>${timeLabel}:</strong> ${time}`;
-        modalDescription.textContent = description;
+        const sentences = description.split(/(?<=[.!?])\s+/);
+        modalDescription.innerHTML = '';
+        for (let i = 0; i < sentences.length; i += 2) {
+          const para = document.createElement('p');
+          para.textContent = sentences.slice(i, i + 2).join(' ');
+          modalDescription.appendChild(para);
+        }
+        modal.querySelector('.modal-content').scrollTop = 0;
         
         modalTech.innerHTML = tech.split(',').map(t => `<span class="tag">${t.trim()}</span>`).join('');
         modalVisuals.innerHTML = images.map(src => `<img src="${src}" class="slider-image" style="margin-bottom:1rem; border-radius:8px; width:100%; display:block;">`).join('');

@@ -53,7 +53,7 @@
   <noscript>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap">
   </noscript>
-  <link rel="stylesheet" href="../css/styles.css?v=20260906">
+  <link rel="stylesheet" href="../css/styles.css?v=20261017">
   <noscript>
     <style>.timeline-item{opacity:1;transform:none}</style>
   </noscript>
@@ -259,10 +259,10 @@
             data-time="Claude skill · HTML/CSS/JS · OBS WebSocket · Twitch chat"
             data-tech="Claude Skill, HTML, CSS, JavaScript, OBS Studio 28+, OBS WebSocket, browser sources, Twitch chat, pack.json"
             data-description="A Claude skill that designs a complete OBS overlay pack tailored to a specific Twitch channel. You give it your channel (or describe the stream, screenshots optional), it researches the content and tone, asks a few questions and proposes two design directions; you pick one and it returns a zip with scenes (starting soon, be right back, ending and main), alerts for subs, raids and bits, on-screen chat, a sub goal bar and custom pieces such as counters. It ships a control panel that docks into OBS as a custom dock, with buttons, hotkeys and Twitch chat commands restricted to mods, and an Install in OBS button that creates and positions scenes and sources over the WebSocket, repairing rather than duplicating when they already exist. It includes preview.html to see the pack before opening OBS, plus automatic design checks: overlap with the game HUD, screen space, text size and contrast. Everything runs locally, with no accounts or servers, reading Twitch chat anonymously. v1 beta: alerts and chat are Twitch-only, tested on Windows."
-            data-images="../images/overlay-generator.svg">
+            data-images="../images/overlay-generator-1.jpg,../images/overlay-generator-2.jpg,../images/overlay-generator-3.jpg,../images/overlay-generator-4.png">
             <div class="slider-container">
               <div class="slider-wrapper">
-                <img class="slider-image" src="../images/overlay-generator.svg" alt="OverlayGenerator — OBS overlay pack with control panel" loading="lazy">
+                <img class="slider-image" src="../images/overlay-generator-1.jpg" alt="OverlayGenerator — OBS overlay pack with control panel" loading="lazy">
               </div>
             </div>
             <div class="card-body">
@@ -542,7 +542,7 @@
             <span id="modal-why-tag"></span>
             <span id="modal-time"></span>
           </div>
-          <p id="modal-description" class="modal-description"></p>
+          <div id="modal-description" class="modal-description"></div>
           <div class="modal-tech" id="modal-tech">
             <!-- Populated by JS -->
           </div>
@@ -551,7 +551,7 @@
     </div>
   </div>
 
-  <script src="../js/main.js?v=20260815"></script>
+  <script src="../js/main.js?v=20261017"></script>
 </body>
 
 </html>
